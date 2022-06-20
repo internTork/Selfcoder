@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// app 2
+Route::get('/welcome', function () {
+    return view('pages.home2');
+})->name('home2');
 
-// Route::get('/', function () {
-//     return view('layouts.app');
-// })->name('home');
 
+// app
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');

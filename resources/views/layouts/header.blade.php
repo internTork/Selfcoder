@@ -95,7 +95,7 @@
                               </button></li> --}}
                        </ul>
                        <ul class="nav navbar-nav navbar-right">
-                           <li class="{{ Route::is('login') ? 'active' : '' }} header-btn"><a
+                           <li class="{{ Route::is('login') ? 'active' : '' }} header-btn rounded-0"><a
                             href=""  data-toggle="modal" data-target="#exampleModal"><i class="las la-ticket-alt"></i>Get Started</a>
                         </li>
                        </ul>
@@ -139,7 +139,7 @@
                                         <img class="rounded mx-auto d-block" src="{{ asset('assets/img/tork-logo.png') }}" alt="" width=70px height=70px>
                                         <h5 class="modal-title text-center" id="exampleModalLabel">SelfCoder</h5>
                                         <hr>
-                                        <form class="form-signin rounded-sm shadow">
+                                        <form class="form-signin rounded-sm ">
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-pills mb-4">
                                                 <li class="pill-1">
@@ -176,9 +176,7 @@
                                                             <input type="checkbox" value="login-as-instructor"> Login as instructor
                                                         </label> --}}
                                                     </div>
-                                                    <button class="btn btn-lg btn-dark btn-block" type="submit">
-                                                        <a href="">Login</a>
-                                                    </button>
+                                                        <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Login</a>
                                                     </div>
 
                                                 <!-- Tab2 -->
@@ -195,7 +193,7 @@
                                                             <input type="checkbox" value="Register-as-instructor"> Register as instructor
                                                         </label> --}}
                                                     </div>
-                                                    <button class="btn btn-lg btn-dark btn-block" type="submit">Register</button>
+                                                    <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
                                                  </div>
                                             </div>
 
@@ -203,7 +201,7 @@
                                    </div><!-- /.container -->
                                     </div>
                                     <hr>
-                                    <a href="" class="btn btn-primary rounded-pill btn-block">
+                                    <a href="" class="btn btn-primary rounded-0 btn-block">
                                       <i class="fa fa-google"></i> Login with Google
                                     </a>
                                 </div>
@@ -223,3 +221,11 @@
   $('#myInput').trigger('focus')
 })
 </script>
+<style>
+    a.log{
+        color: white !important;
+    }
+    .rounded-0{
+        border-radius: 10px !important;
+    }
+</style>
