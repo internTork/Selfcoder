@@ -1,19 +1,11 @@
-   <!-- PreLoader -->
-   {{-- <div id="preloader">
-       <div id="status">
-           <div class="spinner"></div>
-       </div>
-   </div> --}}
-   <!--Preloader-->
-
-   <!-- Mobile Canvus Menu -->
+ <!-- Mobile Canvus Menu -->
    <div class="mobile_canvus_menu">
        <div class="close_btn">
            <img src="img/icon/close-dark.png" alt="">
        </div>
        <div class="menu_part_lux">
            <ul class="menu_list wd_scroll">
-               <li><a href="{{ route('home') }}">Home</a></li>
+               <li><a href="{{ route('home2') }}">Home</a></li>
                {{-- <li><a href="index-2.html">Home</a></li> --}}
                <li>
                    <a href="intro.html">Docs
@@ -66,7 +58,7 @@
        <div class="main_menu">
            <div class="container">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                   <a class="navbar-brand" href="{{ route('home') }}"><img style="height: 60px;"
+                   <a class="navbar-brand" href="{{ route('home2') }}"><img style="height: 60px;"
                            src="{{ asset('assets/img/tork-logo.png') }}" srcset="img/logo-2x.png 2x" alt="" /></a>
                    <button class="navbar-toggler" type="button" data-toggle="collapse"
                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -79,32 +71,34 @@
                                    href="{{ route('home') }}">Home</a></li> --}}
                            {{-- <li class="{{ Route::is('feature') ? 'active' : '' }}"><a
                                    href="{{ route('feature') }}">feature</a></li> --}}
-                            <li class="{{ Route::is('introduction') ? 'active' : '' }}"><a
-                                    href="{{ route('introduction') }}">What is SelfCoder</a></li>
-                           <li class="{{ Route::is('marketplace') ? 'active' : '' }}"><a
-                                   href="{{ route('marketplace') }}">Marketplace</a></li>
-                           <li class="{{ Route::is('showcase') ? 'active' : '' }}"><a
-                                   href="{{ route('showcase') }}">Showcase</a></li>
-                           <li class="{{ Route::is('pricing') ? 'active' : '' }}"><a
-                                   href="{{ route('pricing') }}">Pricing</a></li>
+                            <li class="{{ Route::is('user_introduction') ? 'active' : '' }}"><a
+                                    href="{{ route('user_introduction') }}">What is SelfCoder</a></li>
+                           <li class="{{ Route::is('user_marketplace') ? 'active' : '' }}"><a
+                                   href="{{ route('user_marketplace') }}">Marketplace</a></li>
+                           <li class="{{ Route::is('user_showcase') ? 'active' : '' }}"><a
+                                   href="{{ route('user_showcase') }}">Showcase</a></li>
+                           <li class="{{ Route::is('user_pricing') ? 'active' : '' }}"><a
+                                   href="{{ route('user_pricing') }}">Pricing</a></li>
                             {{-- <li class="{{ Route::is('login') ? 'active' : '' }}"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                 modal
                               </button></li> --}}
+                            <li>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="nav-item active dropdown">
+                                      <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="las la-ticket-alt"></i>Menu
+                                      </a>
+                                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="{{ route('home2') }}">My App </a></li>
+                                        <li><a class="dropdown-item" href="{{ route('product') }}">My product</a></li>
+                                        <li><a class="dropdown-item" href="#">My account</a></li>
+                                        <li><a class="dropdown-item" href="#">Company name</a></li>
+                                        <li><a class="dropdown-item" href="">Logout</a></li>
+                                      </ul>
+                                      </li>
+                                  </ul>
+                            </li>
                        </ul>
-                            <ul class="nav navbar-nav navbar-right">
-                              <li class="nav-item active dropdown">
-                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="las la-ticket-alt"></i>Menu
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" href="#">My App </a></li>
-                                  <li><a class="dropdown-item" href="#">My product</a></li>
-                                  <li><a class="dropdown-item" href="#">My account</a></li>
-                                  <li><a class="dropdown-item" href="#">Company name</a></li>
-                                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                                </li>
-                            </ul>
-                        </ul>
                    </div>
                </nav>
            </div>
@@ -136,5 +130,8 @@
 .dropdown-menu > li > a:hover:after {
 	text-decoration: underline;
 	transform: rotate(-90deg);
+}
+.nav-item{
+    margin-top: 30px;
 }
 </style>

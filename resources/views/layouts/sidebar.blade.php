@@ -18,7 +18,7 @@
                       <ul id="faq">
                           <li> <a href="{{ route('introduction') }}">Getting
                                   started</a></li>
-                          <li> <a href="{{ route('installation') }}">Installation</a> </li>
+                          <li> <a href="{{ route('user_installation') }}">Installation</a> </li>
                           <li> <a href="#">Setting</a></li>
                           <li> <a data-toggle="collapse" data-parent="#faq" href="#drop-down-menu-1">
                                   Menu levels 1 <i class="la la-angle-down"></i></a>

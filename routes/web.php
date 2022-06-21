@@ -12,13 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// app 2
-Route::get('/welcome', function () {
-    return view('pages.home2');
-})->name('home2');
-
-
 // app
 Route::get('/', function () {
     return view('pages.home');
@@ -57,3 +50,29 @@ Route::get('/documentation', function () {
 Route::get('/installation', function () {
     return view('pages.docs.installation');
 })->name('installation');
+
+
+// app 2.  users_pages
+Route::get('/user/welcome', function () {
+    return view('user_pages.home');
+})->name('home2');
+Route::get('/user/product', function () {
+    return view('user_pages.product');
+})->name('product');
+Route::get('/user/showcase', function () {
+    return view('user_pages.showcase');
+})->name('user_showcase');
+Route::get('/user/pricing', function () {
+    return view('user_pages.pricing');
+})->name('user_pricing');
+Route::get('/user/marketplace', function () {
+    return view('user_pages.marketplace');
+})->name('user_marketplace');
+//Docs
+
+Route::get('/user/documentation', function () {
+    return view('user_pages.docs.introduction');
+})->name('user_introduction');
+Route::get('/user/installation', function () {
+    return view('user_pages.docs.installation');
+})->name('user_installation');
