@@ -82,23 +82,21 @@
                             {{-- <li class="{{ Route::is('login') ? 'active' : '' }}"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                 modal
                               </button></li> --}}
-                            <li>
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li class="nav-item active dropdown">
-                                      <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                          <i class="las la-ticket-alt"></i>Menu
-                                      </a>
-                                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="{{ route('home2') }}">My App </a></li>
-                                        <li><a class="dropdown-item" href="{{ route('product') }}">My product</a></li>
-                                        <li><a class="dropdown-item" href="#">My account</a></li>
-                                        <li><a class="dropdown-item" href="#">Company name</a></li>
-                                        <li><a class="dropdown-item" href="">Logout</a></li>
-                                      </ul>
-                                      </li>
-                                  </ul>
-                            </li>
                        </ul>
+                       <ul class="nav navber-height navbar-nav navbar-right">
+                        <li class=" active dropdown">
+                            <a class="nav-link dropdown-toggle btn-menu" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                                <i class="las la-ticket-alt"></i>Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="{{ route('home2') }}">My App </a></li>
+                              <li><a class="dropdown-item" href="{{ route('plugin') }}">My Plugins</a></li>
+                              <li><a class="dropdown-item" href="#">My account</a></li>
+                              <li><a class="dropdown-item" href="#">SelfCoder</a></li>
+                              <li><a class="dropdown-item" href="{{ route('home') }}">Logout</a></li>
+                            </ul>
+                            </li>
+                    </ul>
                    </div>
                </nav>
            </div>
@@ -131,7 +129,19 @@
 	text-decoration: underline;
 	transform: rotate(-90deg);
 }
-.nav-item{
-    margin-top: 30px;
+.btn-menu{
+    background-color: blue; /* Green */
+    border: none;
+    color: white !important;
+    border-radius: 12px;
+    text-align: center;
+    font-weight:800;
+    font-size: 16px;
 }
+.navber-height{
+    line-height: 0px !important;
+}
+/* .nav-item{
+    margin-top: 30px;
+} */
 </style>

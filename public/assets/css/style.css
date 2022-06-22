@@ -645,7 +645,7 @@ background: linear-gradient(to right top, #7586e6, #6b7de7, #4d68fd, #5970f7, #4
 }
 
 .header_area.navbar_fixed .main_menu .navbar .nav.navbar-nav > li > a {
-  line-height: 70px;
+  line-height: 0px;
 }
 
 .header_area.navbar_fixed .main_menu .navbar .nav.navbar-nav.navbar-right li.number:before {
@@ -901,9 +901,9 @@ background: linear-gradient(to right top, #7586e6, #6b7de7, #4d68fd, #5970f7, #4
   color: #4d68fd;
 }
 
-.main_menu .navbar .nav.navbar-nav li:hover i, .main_menu .navbar .nav.navbar-nav li.active i {
+/* .main_menu .navbar .nav.navbar-nav li:hover i, .main_menu .navbar .nav.navbar-nav li.active i {
   color: #4d68fd;
-}
+} */
 
 @media (min-width: 992px) {
   .main_menu .navbar .nav.navbar-nav li:hover.submenu a:after {

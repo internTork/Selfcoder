@@ -5889,6 +5889,7 @@ readers do not read off random characters that represent icons */
 .las {
     font-family: 'Line Awesome Free';
     font-weight: 900;
+    padding: 4px;
 }
 
 .la.la-glass:before {

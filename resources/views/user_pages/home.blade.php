@@ -12,14 +12,14 @@
                 <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
                     <p class="in-line">
                         Learn how to use SelfCoder with our resources, or get started by creating a new app.</p>
-                        <a class="ticket-btn" href="javascript:void(0)">Create a new app</a>
+                        <a class="ticket-btn" href="">Create a new app</a>
                 </div>
             </div>
         </div>
         <!-- Container -->
     </section>
     <!-- /Hero -->
-    {{-- section-4 --}} 
+    {{-- section-4 --}}
     <section class="pt-50 pb-50 section-2">
         <!-- Container -->
         <div class="container">
@@ -31,13 +31,13 @@
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company.png') }}" alt="">
+                                    <img src="{{ asset('assets/img/selfcoder/icon/marketplace1.svg') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
-                                    <h5 class="f-18 mt-4 mb-2">Offers clean energy home financing</h5>
+                                    <h5 class="f-18 mt-4 mb-2">Marketplace</h5>
                                 </div>
-                                <p class="box-dec text-center cus-decription">Raised $365M
-                                    in venture funding.</p>
+                                <p class="box-dec text-center cus-decription">Follow along with a detailed breakdown
+                                     of how to build a marketplace</p>
                             </div>
                         </div>
                         <!-- /col -->
@@ -49,7 +49,7 @@
                                     <img src="{{ asset('assets/img/selfcoder/company1.png') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
-                                    <h5 class="f-18 mt-4 mb-2">Helps repay loans and debt automatically</h5>
+                                    <h5 class="f-18 mt-4 mb-2">Demo</h5>
                                 </div>
                                 <p class="box-dec text-center cus-decription">Raised $1.5M
                                     in venture funding
@@ -62,25 +62,40 @@
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company2.svg') }}" alt="">
+                                    <img src="{{ asset('assets/img/selfcoder/company1.png') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
-                                    <h5 class="f-18 mt-4 mb-2">Curates agile freelance IT talent</h5>
+                                    <h5 class="f-18 mt-4 mb-2">Documentation</h5>
                                 </div>
-                                <p class="box-dec text-center cus-decription">Raised $13M
-                                    in venture funding</p>
+                                <p class="box-dec text-center cus-decription">Raised $1.5M
+                                    in venture funding
+                                </p>
                             </div>
                         </div>
                         <!-- /col -->
                         <!-- col -->
-                        <div class="col-md-6 col-lg-6 wow fadeInUp  delay-4s animated"
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="team-box text-center py-3 py5 rounded mt-4">
+                                <div class="box-img1">
+                                    <img src="{{ asset('assets/img/selfcoder/icon/videos.svg') }}" alt="">
+                                </div>
+                                <div class="box-tittle">
+                                    <h5 class="f-18 mt-4 mb-2">Short Tutorials</h5>
+                                </div>
+                                <p class="box-dec text-center cus-decription">Watch our free video courses to get you started</p>
+                            </div>
+                        </div>
+                        <!-- /col -->
+                        <!-- col -->
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
                                     <img src="{{ asset('assets/img/selfcoder/company3.png') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
-                                    <h5 class="f-18 mt-4 mb-2">Tracks and organizes job search</h5>
+                                    <h5 class="f-18 mt-4 mb-2">Learn From Zero</h5>
                                 </div>
                                 <p class="box-dec text-center cus-decription">Raised $5M
                                     in venture funding</p>
@@ -94,21 +109,6 @@
         <!-- Container -->
     </section>
     {{-- section-4 end --}}
-    {{-- section 7 --}}
-    <section class="pt-50 pb-50 section-end">
-        <!-- Container -->
-        <div class="container">
-            <div class="row hero-1-content pt-20">
-                <div class="col-md-10 col-12 col-center mb-50">
-                    <h1 class="title">Create a free account to get started.</h1>
-                    <a class="ticket-btn" href="#">Get started for free</a>
-                    <p class="sub-text">Join 2,022,695 SelfCoders today and start building.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Container -->
-    </section>
-    {{-- section 3 end --}}
 @endsection
 
 

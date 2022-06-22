@@ -160,28 +160,4 @@
     </section>
     <!-- /Introduction -->
 
-    <!-- /Newsletter -->
-    <section class="newsletter-area pt-50">
-        <!-- Container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <!-- col -->
-                <div class="col-md-8 col-12 col-center">
-                    <div class="newsletter"
-                        style="background-image: url('{{ asset('assets/img/bg/newsletter.jpg') }}');">
-                        <form action="#" method="POST">
-                            <input type="email" class="news-email"
-                                placeholder="Subscribe Newsletter (Enter Email Address)" />
-                            <button type="submit" class="news-btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <!-- col -->
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /Container -->
-    </section>
-    <!-- /Newsletter -->
 @endsection
