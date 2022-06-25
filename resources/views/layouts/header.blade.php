@@ -214,7 +214,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
 
 <script>
     $('#myModal').on('shown.bs.modal', function () {

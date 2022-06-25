@@ -12,7 +12,7 @@
                 <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
                     <p class="in-line">
                         Learn how to use SelfCoder with our resources, or get started by creating a new app.</p>
-                        <a class="ticket-btn" href="">Create a new app</a>
+                        <a class="ticket-btn btn-primary {{ Route::is('home2') ? 'active' : '' }}" href=""  data-toggle="modal" data-target="#exampleModal">Create a new app</a>
                 </div>
             </div>
         </div>
@@ -110,7 +110,97 @@
     </section>
     {{-- section-4 end --}}
 @endsection
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+                <!-- Container -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="container mt-2">
+                                <div class="header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                      <h5>Create a new app</h5>
+                                </div>
+                                <form class="form-signin rounded-sm ">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills mb-4">
+                                        <li class="pill-1">
+                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                        </li>
+                                        <li class="pill-2">
+                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
 
+                                        <!-- Tab1 -->
+                                        <div id="login" class="container tab-pane active">
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="">Email</label>
+                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword" class="">Password</label>
+                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                            </div>
+                                            <div class="one-line mb-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" value="remember-me"> Remember me
+                                                    </label>
+
+                                                </div>
+                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                            </div>
+                                            <div class="checkbox mb-3">
+                                                {{-- <label>
+                                                    <input type="checkbox" value="login-as-instructor"> Login as instructor
+                                                </label> --}}
+                                            </div>
+                                                <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Login</a>
+                                            </div>
+
+                                        <!-- Tab2 -->
+                                        <div id="register" class="container tab-pane fade">
+                                            <label for="inputEmail" class="">Email</label>
+                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
+                                            <label for="inputPassword" class="">Password</label>
+                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
+                                            <label for="inputPassword" class="">Confirm Password</label>
+                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+
+                                            <div class="checkbox mb-3">
+                                                {{-- <label>
+                                                    <input type="checkbox" value="Register-as-instructor"> Register as instructor
+                                                </label> --}}
+                                            </div>
+                                            <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
+                                         </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                <!-- Container -->
+            </section>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
 
 @section('style')
     @parent

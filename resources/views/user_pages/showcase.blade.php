@@ -1,6 +1,21 @@
 @extends('layouts.app2')
 
 @section('content')
+    {{-- section 4 --}}
+    {{-- <section class="pt-50 pb-50 section-end">
+        <!-- Container -->
+        <div class="container">
+            <div class="row hero-1-content pt-20">
+                <div class="col-md-10 col-12 col-center mb-50">
+                    <h1 class="title">Create a free account to get started.</h1>
+                    <a class="ticket-btn" href="#">Get Started For Free</a>
+                    <p class="sub-text">Join 2,023,090 SelfCoders today and start building.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Container -->
+    </section> --}}
+    {{-- section 4 end --}}
     {{-- section 1 --}}
     <section class="hero-1 section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
         <!-- Container -->
@@ -276,22 +291,6 @@
         <!-- Container -->
     </section>
     {{-- section 3 end --}}
-
-    {{-- section 4 --}}
-    <section class="pt-50 pb-50 section-end">
-        <!-- Container -->
-        <div class="container">
-            <div class="row hero-1-content pt-20">
-                <div class="col-md-10 col-12 col-center mb-50">
-                    <h1 class="title">Create a free account to get started.</h1>
-                    <a class="ticket-btn" href="#">Get Started For Free</a>
-                    <p class="sub-text">Join 2,023,090 SelfCoders today and start building.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Container -->
-    </section>
-    {{-- section 4 end --}}
 
 @section('style')
     @parent

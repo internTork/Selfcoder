@@ -8,11 +8,8 @@
             <div class="row hero-1-content pt-20">
                 <div class="col-md-12">
                     <h2 class="heading text-center text-primary">Pricing</h2>
-                    <h1 class="title">Free to learn and build.
+                    <h1 class="title">Free to learn and build. <br>
                         Pay as you grow.</h1>
-                </div>
-                <div class="col-md-8 col-12 col-center mb-50 pt-4">
-                    <a class="ticket-btn" href="">Get Started For Free</a>
                 </div>
             </div>
         </div>
@@ -26,7 +23,7 @@
         <div class="container">
             <div class="row hero-1-content pt-20">
                 <div class="col-md-12 col-12">
-                    <p class="pricing-text">Our Free plan enables you to learn the platform and build your application.
+                    <p class="pricing-text">Our <strong class="text-primary">Free plan</strong> enables you to learn the platform and build your application.
                         Paid plans offer
                         additional features, such as white-labeling, a custom domain, access to the Bubble API and reserved
                         server capacity.</p>
@@ -251,27 +248,6 @@
     {{-- section 2 end --}}
 
     {{-- section 3 --}}
-    <section class="pb-50">
-        <!-- Container -->
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-2 col-12 col-center wow fadeInUp  delay-4s animated">
-                    <div class="newsletter"
-                        style="background-image: url('{{ asset('assets/img/bg/newsletter.jpg') }}');">
-                        <form action="#" method="POST">
-                            <input type="email" class="news-email"
-                                placeholder="Subscribe Newsletter (Enter Email Address)" />
-                            <button type="submit" class="news-btn">Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Container -->
-    </section>
-    {{-- section 3 end --}}
-
-    {{-- section 3 --}}
     <section class="pt-50 pb-50 ">
         <!-- Container -->
         <div class="container">
@@ -292,7 +268,7 @@
                         <div class="box-tittle">
                             <h2 class="f-18 mb-10">Build for your clients</h2>
                         </div <p class="box-dec-pricing">If you build sites and apps for your clients,
-                            our Agency subscription lets your team use all paid features
+                            our <a href="" class="text-primary">Agency subscription</a> lets your team use all paid features
                             while you develop your applications.</p>
                     </div>
                 </div>
@@ -309,22 +285,6 @@
                              Please <a href="" class="text-primary">Contact us</a>  to learn more.
                         </p>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Container -->
-    </section>
-    {{-- section 3 end --}}
-
-    {{-- section 3 --}}
-    <section class="pt-50 pb-50 section-end">
-        <!-- Container -->
-        <div class="container">
-            <div class="row hero-1-content pt-20">
-                <div class="col-md-10 col-12 col-center mb-50">
-                    <h1 class="title">Create a free account to get started.</h1>
-                    <a class="ticket-btn" href="#">Get Started For Free</a>
-                    <p class="sub-text">Join 2,023,090 SelfCoders today and start building.</p>
                 </div>
             </div>
         </div>

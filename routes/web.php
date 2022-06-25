@@ -56,9 +56,9 @@ Route::get('/installation', function () {
 Route::get('/user/welcome', function () {
     return view('user_pages.home');
 })->name('home2');
-Route::get('/user/plugin', function () {
-    return view('user_pages.menu.plugin');
-})->name('plugin');
+Route::get('/user/product', function () {
+    return view('user_pages.menu.product');
+})->name('Product');
 Route::get('/user/showcase', function () {
     return view('user_pages.showcase');
 })->name('user_showcase');
