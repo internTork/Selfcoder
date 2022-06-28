@@ -12,7 +12,7 @@
                         Pay as you grow.</h1>
                 </div>
                 <div class="col-md-8 col-12 col-center mb-50 pt-4">
-                    <a class="ticket-btn" href="">Get Started For Free</a>
+                        <a href="" class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
                 </div>
             </div>
         </div>
@@ -56,10 +56,10 @@
                                                     <div class="box-tittle">
                                                         <h5 class="f-18 mt-4 mb-2 text-primary">Free</h5>
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <p class="card-content">
-                                                    Core platform features<br>
-                                                    Bubble branding<br>
+                                                    Core platform features <br>
+                                                    SelCoder branding <br>
                                                     Community support</p>
 
                                                 <hr>
@@ -74,7 +74,7 @@
                                                     <div class="box-tittle">
                                                         <h5 class="f-18 mt-4 mb-2 text-primary">Personal</h5>
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <p class="card-content">Core platform + API<br>
                                                     Custom domain<br>
                                                     Email support<br>
@@ -93,7 +93,7 @@
                                                     <div class="box-tittle">
                                                         <h5 class="f-18 mt-4 mb-2 text-primary">Professional</h5>
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <p class="card-content">
                                                     3 units of server capacity<br>
                                                     2 application editors<br>
@@ -111,7 +111,7 @@
                                                     <div class="box-tittle">
                                                         <h5 class="f-18 mt-4 mb-2 text-primary">Production</h5>
                                                     </div>
-                                                </div>
+                                                </div><br>
                                                 <p class="card-content">
                                                     10 units of server capacity <br>
                                                     15 application editors <br>
@@ -323,7 +323,7 @@
             <div class="row hero-1-content pt-20">
                 <div class="col-md-10 col-12 col-center mb-50">
                     <h1 class="title">Create a free account to get started.</h1>
-                    <a class="ticket-btn" href="#">Get Started For Free</a>
+                    <a class="ticket-btn btn-primary" href=""  data-toggle="modal" data-target="#exampleModal">Get Started For Free</a>
                     <p class="sub-text">Join 2,023,090 SelfCoders today and start building.</p>
                 </div>
             </div>
@@ -332,7 +332,109 @@
     </section>
     {{-- section 3 end --}}
 @endsection
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+                <!-- Container -->
+                <div class="container">
+                    <div class="row  ">
+                        <div class="container mt-2">
+                            <div class="row justify-content-center align-items-center  p-2">
+                                <div class="m-1 col-sm-12 col-md-12 col-lg-12 shadow-sm p-3 mb-5 bg-white border rounded">
+                                    <div class="pt-5 pb-5">
+                                        <img class="rounded mx-auto d-block" src="{{ asset('assets/img/tork-logo.png') }}" alt="" width=70px height=70px>
+                                        <h5 class="modal-title text-center" id="exampleModalLabel">SelfCoder</h5>
+                                        <hr>
+                                        <form class="form-signin rounded-sm ">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-pills mb-4">
+                                                <li class="pill-1">
+                                                    <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                                </li>
+                                                <li class="pill-2">
+                                                    <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
 
+                                                <!-- Tab1 -->
+                                                <div id="login" class="container tab-pane active">
+                                                    <div class="form-group">
+                                                        <label for="inputEmail" class="">Email</label>
+                                                        <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputPassword" class="">Password</label>
+                                                        <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                                    </div>
+                                                    <div class="one-line mb-2">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" checked="checked" value="remember-me"> Remember me
+                                                            </label>
+
+                                                        </div>
+                                                        <a class="forgot text-right" href="#">Forgot password?</a>
+                                                    </div>
+                                                    <div class="checkbox mb-3">
+                                                        {{-- <label>
+                                                            <input type="checkbox" value="login-as-instructor"> Login as instructor
+                                                        </label> --}}
+                                                    </div>
+                                                        <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Login</a>
+                                                    </div>
+
+                                                <!-- Tab2 -->
+                                                <div id="register" class="container tab-pane fade">
+                                                    <label for="inputEmail" class="">Email</label>
+                                                    <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
+                                                    <label for="inputPassword" class="">Password</label>
+                                                    <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
+                                                    <label for="inputPassword" class="">Confirm Password</label>
+                                                    <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+
+                                                    <div class="checkbox mb-3">
+                                                        {{-- <label>
+                                                            <input type="checkbox" value="Register-as-instructor"> Register as instructor
+                                                        </label> --}}
+                                                    </div>
+                                                    <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
+                                                 </div>
+                                            </div>
+
+                                        </form>
+                                   </div><!-- /.container -->
+                                    </div>
+                                    <hr>
+                                    <a href="" class="btn btn-primary rounded-0 btn-block">
+                                      <i class="fa fa-google"></i> Login with Google
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Container -->
+            </section>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
 
 @section('style')
     @parent

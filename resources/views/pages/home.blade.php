@@ -7,16 +7,15 @@
         <div class="container-fluid">
             <div class="row hero-1-content">
                 <div class="col-md-12 ">
-                    <h1 class="title">The best way to build web apps without code</h1>
+                    <h1 class="title font-weight-bold">The best way to build  web apps without code</h1>
                 </div>
                 <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
-                    <p class="">Building tech is slow and expensive. SelfCoder is the most powerful no-code platform for creating digital products. Build better and faster.</p>
+                    <p class="">Selfcoder is working in IT services developing software applications. Build better and faster.</p>
                         <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
-                       <p class="sub-text">Join 2,022,420 SelfCoders today and start building.</p>
                 </div>
                 <div class="col-md-12">
                     <div class="hero-image text-center">
-                        <img src="{{ asset('assets/img/selfcoder/selfcoder.png') }}" class="img-fluid" data-aos="fade-up"
+                        <img src="{{ asset('assets/img/selfcoder/images/selfcoder.jpg') }}" class="img-fluid" data-aos="fade-up"
                             alt="Hero">
                     </div>
                 </div>
@@ -35,79 +34,62 @@
     <section class="pt-50 ">
         <div class="container">
             <div class="row">
+                <div class="col-md-8 offset-2 col-center pt-4">
+                    <h1 class="title">Design, develop and run powerful products with SelfCoder.</h1>
+                    <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
+                        <a href=""><p class="text-primary">Edit this page in SelfCoder to see how it works  </p></a>
+                    </div>
+                </div>
                 <div class="col-md-12 mb-50">
                     <div class="row mt-5 pt-2">
                         <!-- col -->
-                        <div class="col-lg-3 wow fadeInUp  delay-4s animated"
+                        <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box py-3 rounded mt-4 py5">
                                 <div class="item-box">
                                     <div class="box-img ">
-                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/prototype.svg') }}" alt="">
+                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/2.png') }}" alt="">
                                     </div>
                                     <div class="box-tittle">
-                                        <h2 class="m-4">Prototype</h2>
+                                        <h2 class="m-4">First Growing</h2>
                                     </div>
                                 </div>
-                                <p class="box-dec">Demonstrate your idea before making
-                                     an investment in technical resources.</p>
+                                <p class="box-dec">We look at every new assignment as an opportunity to nurture a long term business relation.</p>
                             </div>
                         </div>
                         <!-- /col -->
                         <!-- col -->
-                        <div class="col-lg-3 wow fadeInUp  delay-4s animated"
+                        <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box  py-3 rounded mt-4 py5">
                                 <div class="item-box">
                                     <div class="box-img ">
-                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/launch-icon.svg') }}" alt="">
+                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/1.png') }}" alt="">
                                     </div>
                                     <div class="box-tittle">
-                                        <h2 class="m-4">Launch</h2>
+                                        <h2 class="m-4">Expert Peoples</h2>
                                     </div>
                                 </div>
-                                <p class="box-dec ">Build customer-facing web platforms and internal tools in hours instead of months.</p>
+                                <p class="box-dec ">Our valued clients who believed in our capabilities and entrusted us to be their partner.</p>
                             </div>
                         </div>
                         <!-- /col -->
                         <!-- col -->
-                        <div class="col-lg-3 wow fadeInUp  delay-4s animated"
+                        <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box  py-3 rounded mt-4 py5">
                                 <div class="item-box">
                                     <div class="box-img ">
-                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/iterate-icon.svg') }}" alt="">
+                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/3.png') }}" alt="">
                                     </div>
                                     <div class="box-tittle">
-                                        <h2 class="m-4">Iterate</h2>
+                                        <h2 class="m-4">Creative Ideas</h2>
                                     </div>
                                 </div>
-                                <p class="box-dec ">Empower anyone on your team to make changes, not just developers.</p>
+                                <p class="box-dec ">Everyday we come to work and also transform the ideas of our clients into working applications.</p>
                             </div>
                         </div>
                         <!-- /col -->
-                        <!-- col -->
-                        <div class="col-lg-3 wow fadeInUp  delay-4s animated"
-                            style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="team-box  py-3 rounded mt-4 py5">
-                                <div class="item-box">
-                                    <div class="box-img ">
-                                        <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/scale.svg') }}" alt="">
-                                    </div>
-                                    <div class="box-tittle">
-                                        <h2 class="m-4">Scale</h2>
-                                    </div>
-                                </div>
-                                <p class="box-dec">Gain traction and grow without worrying about infrastructure.</p>
-                            </div>
-                        </div>
-                        <!-- /col -->
-                    </div>
-                </div>
-                <div class="col-md-8 offset-2 col-center ">
-                    <h1 class="title">Design, develop and run powerful products with SelfCoder.</h1>
-                    <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
-                        <a href=""><p class="">Edit this page in SelfCoder to see how it works  </p></a>
                     </div>
                 </div>
             </div>
@@ -115,7 +97,7 @@
     </section>
     {{-- work-section end --}}
     {{-- work secttion sart  --}}
-    <section class="hero-1" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+    <section class="" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
         <!-- Container -->
         <div class="container-fluid">
             <div class="row hero-1-content">
@@ -123,15 +105,14 @@
                     <div class="hero-image text-center">
                         {{-- <img src="{{ asset('assets/img/lms/learner.png') }}" class="img-fluid" data-aos="fade-up"
                             alt="Hero"> --}}
-                            <img src="{{ asset('assets/img/functionality.jpg') }}" class="img-fluid rounded py5" data-aos="fade-up" alt="Hero">
+                            <img src="{{ asset('assets/img/selfcoder/feature/role2.jpg') }}" class="img-fluid rounded py5" data-aos="fade-up" alt="Hero">
                     </div>
                     <div class="col-md-12 ">
-                        <h1 class="title">Full functionality, no code</h1>
+                        <h1 class="title">Full functionality</h1>
                     </div>
-                    <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
+                    <div class="col-md-10 col-sm-10 col-offset- col-center mb-50">
                         <p class="">SelfCoder lets you create interactive, multi-user apps for desktop and mobile web browsers,
-                            including all the features you need to build a site like Facebook or Airbnb.
-                             Build out logic and manage a database with our intuitive, fully customizable platform.</p>
+                            Build out logic and manage a database with our intuitive, fully customizable platform.</p>
                              <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
                     </div>
                 {{-- </div>
@@ -154,7 +135,7 @@
                 style="visibility: visible; animation-name: fadeInUp;">
                 <div class="team-box text-center py-3 rounded mt-4 py5">
                     <div class="single-box">
-                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel.jpg') }}" alt="">
+                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel/pixel.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -164,7 +145,7 @@
                 style="visibility: visible; animation-name: fadeInUp;">
                 <div class="team-box text-center py-3 rounded mt-4 py5">
                     <div class="single-box">
-                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel1.jpg') }}" alt="">
+                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel/pixel1.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -173,7 +154,7 @@
                 style="visibility: visible; animation-name: fadeInUp;">
                 <div class="team-box text-center py-3 rounded mt-4 py5">
                     <div class="single-box">
-                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel2.jpg') }}" alt="">
+                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel/pixel2.jpg') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -192,7 +173,7 @@
     <!-- Container -->
 </section>
 
-    <section class="hero-1" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+    <section class="" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
         <!-- Container -->
         <div class="container-fluid">
             <div class="row hero-1-content">
@@ -471,7 +452,7 @@
                                                             <input type="checkbox" value="Register-as-instructor"> Register as instructor
                                                         </label> --}}
                                                     </div>
-                                                    <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
+                                                    <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Register</a>
                                                  </div>
                                             </div>
 

@@ -90,8 +90,8 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                               <li><a class="dropdown-item" href="{{ route('home2') }}">My App </a></li>
-                              <li><a class="dropdown-item" href="{{ route('Product') }}">My Product</a></li>
-                              <li><a class="dropdown-item" href="#">My account</a></li>
+                              <li><a class="dropdown-item" href="{{ route('product') }}">My Product</a></li>
+                              <li><a class="dropdown-item" href="{{ route('user_account') }}">My account</a></li>
                               <li><a class="dropdown-item" href="#">SelfCoder</a></li>
                               <li><a class="dropdown-item" href="{{ route('home') }}">Logout</a></li>
                             </ul>

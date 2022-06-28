@@ -84,7 +84,7 @@
                         <div class="single-box tamplate-box">
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                  <div class="overlay">
+                                  <div class="overlay text-center">
                                     <button class="btn btn-primary">sign up</button>
                                     <button class="btn btn-default">sign in</button>
                                   </div>

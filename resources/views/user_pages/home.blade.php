@@ -126,62 +126,58 @@
                                       </button>
                                       <h5>Create a new app</h5>
                                 </div>
-                                <form class="form-signin rounded-sm ">
-                                    <!-- Nav tabs -->
-                                    <ul class="nav nav-pills mb-4">
-                                        <li class="pill-1">
-                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
-                                        </li>
-                                        <li class="pill-2">
-                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
-                                        </li>
-                                    </ul>
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
+                                <form class="  ">
+                                    <div class="row">
 
-                                        <!-- Tab1 -->
-                                        <div id="login" class="container tab-pane active">
+                                        <div class="col-md-6 ">
                                             <div class="form-group">
-                                                <label for="inputEmail" class="">Email</label>
-                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                                <label for="app" class="font-size">Name of this new app</label>
+                                                <input type="text" class="border form-control" id="app">
+                                                <small class="form-text text-muted font-small">You can add a domain name later.</small>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputPassword" class="">Password</label>
-                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                                <label for="" class="font-size">What kind of app are you building?</label>
+                                                <select class="custom-select font-size" id="gender2">
+                                                    <option class="dropdown-choice dropdown-placeholder" style="color: rgb(36, 36, 36); display: none;" selected disabled>Marketplace, social network, SaaS...</option>
+                                                    <option class="dropdown-choice" value="Blog" style="color: rgb(36, 36, 36);">Blog</option>
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                  </select>
                                             </div>
-                                            <div class="one-line mb-2">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" checked="checked" value="remember-me"> Remember me
-                                                    </label>
-
-                                                </div>
-                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                            <div class="form-group">
+                                                <label for="" class="font-size">Is it customer-facing or internal?</label>
+                                                <select class="custom-select font-size" id="">
+                                                    <option value="" style="color: rgb(36, 36, 36); display: none;" selected></option>
+                                                    <option value="1">External or customer-facing</option>
+                                                    <option value="2">Internal or employee-facing</option>
+                                                  </select>
                                             </div>
-                                            <div class="checkbox mb-3">
-                                                {{-- <label>
-                                                    <input type="checkbox" value="login-as-instructor"> Login as instructor
-                                                </label> --}}
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="" class="font-size">Start from a template (optional)</label>
+                                                <small class="form-text text-muted font-small">Want to start from a template instead?<br>
+                                                    Explore the <a href="" class="text-primary">templates on the marketplace</a>.
+                                                </small>
                                             </div>
-                                                <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Login</a>
+                                            <div class="form-group">
+                                                <label for="" class="font-size">Details about your app (optional)</label>
+                                                <input type="text" class="form-control border">
+                                                <small class="form-text text-muted font-small">Try to be specific so that we can help!</small>
                                             </div>
-
-                                        <!-- Tab2 -->
-                                        <div id="register" class="container tab-pane fade">
-                                            <label for="inputEmail" class="">Email</label>
-                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
-                                            <label for="inputPassword" class="">Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
-                                            <label for="inputPassword" class="">Confirm Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
-
-                                            <div class="checkbox mb-3">
-                                                {{-- <label>
-                                                    <input type="checkbox" value="Register-as-instructor"> Register as instructor
-                                                </label> --}}
+                                            <div class="form-group">
+                                                <label for="" class="font-size text-inline">What’s your goal with this application?</label>
+                                                <select class="custom-select" id="gender2">
+                                                    <option value="" style="color: rgb(36, 36, 36); display: none;" selected></option>
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                  </select>
                                             </div>
-                                            <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
-                                         </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Need help getting started? Hire someone to build your app for you or ask other users on the forum!</label>
+                                        </div>
+                                        <button class="btn btn-primary btn-block">create new app</button>
                                     </div>
 
                                 </form>
@@ -213,7 +209,13 @@
             font-size: 18px;
             margin-top: 10px;
         }
-
+        .font-size{
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .font-small{
+            font-size: 11px;
+        }
         .backend-btn {
             background: #000000;
             color: #fff;

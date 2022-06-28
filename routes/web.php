@@ -58,7 +58,7 @@ Route::get('/user/welcome', function () {
 })->name('home2');
 Route::get('/user/product', function () {
     return view('user_pages.menu.product');
-})->name('Product');
+})->name('product');
 Route::get('/user/showcase', function () {
     return view('user_pages.showcase');
 })->name('user_showcase');
@@ -68,6 +68,9 @@ Route::get('/user/pricing', function () {
 Route::get('/user/marketplace', function () {
     return view('user_pages.marketplace');
 })->name('user_marketplace');
+Route::get('/user/account', function () {
+    return view('user_pages.account');
+})->name('user_account');
 //Docs
 
 Route::get('/user/documentation', function () {

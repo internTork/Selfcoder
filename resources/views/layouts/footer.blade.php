@@ -8,11 +8,24 @@
                     <ul>
 
                     <h6 class="fw-bold">Discover</h6>
-                        <li><a href="">Features</a></li>
                         <li><a href="">Showcase</a></li>
                         <li><a href="">Pricing</a></li>
                         <li><a href="">How to build</a></li>
                         <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="item3">
+                    <ul>
+
+                    <h6 class="fw-bold">Ecosystem</h6>
+                        <li><a href="">Marketplace</a></li>
+                        <li><a href="">Templates</a></li>
+                        <li><a href="">Plugins</a></li>
+                        <li><a href="">Agencies</a></li>
+                        <li><a href=""> Bootcamps</a></li>
+                        <li><a href="">Coaching</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,27 +44,12 @@
                 </div>
             </div>
             <div class="col-md-2">
-                <div class="item3">
-                    <ul>
-
-                    <h6 class="fw-bold">Ecosystem</h6>
-                        <li><a href="">Marketplace</a></li>
-                        <li><a href="">Templates</a></li>
-                        <li><a href="">Plugins</a></li>
-                        <li><a href="">Agencies</a></li>
-                        <li><a href="">Bootcamps</a></li>
-                        <li><a href="">Coaching</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-2">
                 <div class="item4">
                     <ul>
 
                     <h6 class="fw-bold">Community</h6>
                         <li><a href="">Forum</a></li>
                         <li><a href="">Blog</a></li>
-                        <li><a href="">Immerse</a></li>
                         <li><a href="">LinkedIn</a></li>
                         <li><a href="">Twitter</a></li>
                         <li><a href="">Facebook</a></li>

@@ -258,7 +258,7 @@
                         <div class="box-tittle">
                             <h2 class="f-18 mb-10">Dedicated solutions</h2>
                         </div <p class="box-dec-pricing">For enterprise clients and apps with special requirements,
-                             we can run a dedicated Bubble instance on a cluster in the AWS region of your choice.
+                             we can run a dedicated SelfCoder instance on a cluster in the AWS region of your choice.
                              <a href="" class="text-primary">Contact us</a> to learn more</p>
                     </div>
                 </div>

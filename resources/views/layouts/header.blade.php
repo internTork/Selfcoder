@@ -194,7 +194,7 @@
                                                         </label> --}}
                                                     </div>
                                                     <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
-                                                 </div>
+                                                </div>
                                             </div>
 
                                         </form>
@@ -202,7 +202,7 @@
                                     </div>
                                     <hr>
                                     <a href="" class="btn btn-primary rounded-0 btn-block">
-                                      <i class="fa fa-google"></i> Login with Google
+                                        <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
                                     </a>
                                 </div>
                             </div>
@@ -227,5 +227,9 @@
     }
     .rounded-0{
         border-radius: 10px !important;
+    }
+    .img-google{
+        height: 20px;
+        width: 20px;
     }
 </style>

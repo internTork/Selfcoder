@@ -36,7 +36,7 @@
                                                         SelfCoder Marketplace</a>
                                                     </strong>.
                                                 </p> <br>
-                                                    <a class="ticket-btn" href="">New Plugin</a>
+                                                <a class="ticket-btn btn-primary {{ Route::is('home2') ? 'active' : '' }}" href=""  data-toggle="modal" data-target="#pluginModal">New Plugin</a>
                                             </div>
                                         </div>
 
@@ -55,13 +55,13 @@
                                         <div class="py-3 rounded mt-4 ">
                                             <p class="card-content">Build templates to ease app creation for you and others.
                                                 <br><br>
-                                                You can publish templates on the 
+                                                You can publish templates on the
                                                 <strong>
                                                     <a class="text-primary font-weight-bold" href="{{ route('user_marketplace') }}">
                                                     SelfCoder Marketplace</a>
                                                 </strong>.
                                             </p> <br>
-                                                <a class="ticket-btn" href="">New Tamplate</a>
+                                            <a class="ticket-btn btn-primary {{ Route::is('home2') ? 'active' : '' }}" href=""  data-toggle="modal" data-target="#tamplateModal">New Tamplate</a>
                                         </div>
                                     </div>
 
@@ -81,11 +81,124 @@
     </section>
     {{-- section 1 end --}}
 @endsection
+<!-- Modal -->
+<div class="modal fade" id="pluginModal" tabindex="-1" aria-labelledby="pluginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+                <!-- Container -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="container mt-4">
+                                <div class="header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                      <h5>Create a new plugin</h5>
+                                </div>
+                                <form class="  ">
+                                    <div class="row">
 
+                                        <div class="col-md-12 ">
+                                            <div class="form-group">
+                                                <label for="app" class="">How do you want to name this plugin?</label>
+                                                <input type="text" class="border form-control" id="app">
+                                                <small class="form-text text-muted">You'll be able to change this later</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button class="ticket-btn btn-primary btn-block ">create</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                <!-- Container -->
+            </section>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="tamplateModal" tabindex="-1" aria-labelledby="tamplateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+                <!-- Container -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="container mt-4">
+                                <div class="header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                      <h5>Create a new tamplate</h5>
+                                </div>
+                                <form class="  ">
+                                    <div class="row">
+
+                                        <div class="col-md-12 ">
+                                            <div class="form-group">
+                                                <label for="app" class="font-size">How do you want to name this template? (30 characters max)</label>
+                                                <input type="text" class="border form-control" id="app">
+                                                <small class="form-text text-muted font-small">You'll be able to change this later</small>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <label for="" class="font-size">Create a new app?</label>
+                                                <input type="text" class="border form-control">
+                                            </div>
+                                            <div class="col-md-6">
+                                                    <label for="" class="font-size">Or use an existing app?</label>
+                                                    <select class="custom-select font-size" id="gender2">
+                                                        <option class="dropdown-choice dropdown-placeholder" style="color: rgb(36, 36, 36); display: none;" selected disabled></option>
+                                                        <option class="dropdown-choice" value="Blog" style="color: rgb(36, 36, 36);">Blog</option>
+                                                    </select>
+                                                      <small class="font-small">The app should have no data and should be on the Free plan</small>
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label font-size" for="exampleCheck1"> I certify that I own all the intellectual property rights                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 pt-4">
+                                        <button class="btn btn-primary btn-block ">create</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                <!-- Container -->
+            </section>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
 
 @section('style')
     @parent
     <style>
+        .font-size{
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .font-small{
+            font-size: 11px;
+        }
         .heading {
             text-align: left;
         }
