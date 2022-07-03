@@ -177,7 +177,7 @@
                                         <div class="form-group">
                                             <label for="">Need help getting started? Hire someone to build your app for you or ask other users on the forum!</label>
                                         </div>
-                                        <button class="btn btn-primary btn-block">create new app</button>
+                                        <button class="ticket-btn btn-primary">create new app</button>
                                     </div>
 
                                 </form>

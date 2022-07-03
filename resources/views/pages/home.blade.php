@@ -7,11 +7,11 @@
         <div class="container-fluid">
             <div class="row hero-1-content">
                 <div class="col-md-12 ">
-                    <h1 class="title font-weight-bold">The best way to build  web apps without code</h1>
+                    <h1 class="title font-weight-bold">Without coding build web apps</h1>
                 </div>
                 <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
-                    <p class="">Selfcoder is working in IT services developing software applications. Build better and faster.</p>
-                        <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
+                    <p class="">Selfcoder is working in IT services developing software applications</p>
+                        <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
                 </div>
                 <div class="col-md-12">
                     <div class="hero-image text-center">
@@ -34,12 +34,6 @@
     <section class="pt-50 ">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 offset-2 col-center pt-4">
-                    <h1 class="title">Design, develop and run powerful products with SelfCoder.</h1>
-                    <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
-                        <a href=""><p class="text-primary">Edit this page in SelfCoder to see how it works  </p></a>
-                    </div>
-                </div>
                 <div class="col-md-12 mb-50">
                     <div class="row mt-5 pt-2">
                         <!-- col -->
@@ -90,52 +84,113 @@
                             </div>
                         </div>
                         <!-- /col -->
+                        <div class="col-md-8 offset-2 col-center pt-4">
+                            <h1 class="title">Design, develop and run powerful products with SelfCoder.</h1>
+                            <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
+                                <a href=""><p class="text-primary">Edit this page in SelfCoder to see how it works  </p></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     {{-- work-section end --}}
-    {{-- work secttion sart  --}}
-    <section class="" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
-        <!-- Container -->
-        <div class="container-fluid">
-            <div class="row hero-1-content">
-                <div class="col-md-12">
-                    <div class="hero-image text-center">
-                        {{-- <img src="{{ asset('assets/img/lms/learner.png') }}" class="img-fluid" data-aos="fade-up"
-                            alt="Hero"> --}}
-                            <img src="{{ asset('assets/img/selfcoder/feature/role2.jpg') }}" class="img-fluid rounded py5" data-aos="fade-up" alt="Hero">
+    {{-- work-section start --}}
+    <section class="pt-50 pb-50">
+        <div class="container">
+            <!-- study -->
+            <div class="row">
+                <div class="col-md-5 col-5 mb-50">
+                    <h1 class="title-showcase">Full functionality </h1>
+                    <p class="showcase-content">SelfCoder is the ultimate tool for someone with or without technical experience like myself.
+                            With SelfCoder, I was able to turn an idea into an MVP in a matter of weeks.
+                            The only limit is your own imagination.</p>
+                    <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
+                </div>
+                <div class="col-md-7 col-7 mb-50">
+                    <div class="show-case-img">
+                        <img src="{{ asset('assets/img/selfcoder/feature/role2.jpg') }}"
+                            class="img-fluid show-right" data-aos="fade-up" alt="Hero">
                     </div>
-                    <div class="col-md-12 ">
-                        <h1 class="title">Full functionality</h1>
-                    </div>
-                    <div class="col-md-10 col-sm-10 col-offset- col-center mb-50">
-                        <p class="">SelfCoder lets you create interactive, multi-user apps for desktop and mobile web browsers,
-                            Build out logic and manage a database with our intuitive, fully customizable platform.</p>
-                             <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
-                    </div>
-                {{-- </div>
-                <div class="col-md-8 col-12 col-center mb-50">
-                    <a class="ticket-btn" href="javascript:void(0)">Browse Frontend</a>
-                    <a class="backend-btn" href="javascript:void(0)">Browse Backend</a>
-                </div> --}}
+                </div>
             </div>
+            <!-- study end -->
         </div>
-        <!-- Container -->
     </section>
-     {{-- 4 section end  --}}
+    {{-- work-section end --}}
+    {{-- work-section start --}}
+    <section class="pt-50 pb-50">
+        <div class="container">
+            <!-- study -->
+            <div class="row">
+                <div class="col-md-7 col-7 mb-50">
+                    <div class="show-case-img">
+                        <img src="{{ asset('assets/img/selfcoder/workflow.png') }}"
+                            class="img-fluid show-right" data-aos="fade-up" alt="Hero">
+                    </div>
+                </div>
+                <div class="col-md-5 col-5 mb-50">
+                    <h1 class="title-showcase">Robust, scalable infrastructure </h1>
+                    <p class="showcase-content">Traditional web applications require you to manage your code and set up a deployment process to a web server.
+                        SelfCoder handles deployment and hosting for you.
+                        There are no hard limits on the number of users, volume of traffic, or data storage.</p>
+                    <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
+                </div>
+            </div>
+            <!-- study end -->
+        </div>
+    </section>
+    {{-- work-section end --}}
  {{-- section 2  --}}
  <section class="pt-50 pb-50 section-2">
     <!-- Container -->
     <div class="container">
         <div class="row hero-1-content pt-20">
+            <div class="col-md-10 col-12 col-center mb-50 pt-4">
+                <h1 class="title">Pixel-perfect designs</h1>
+            </div>
+            <div class="col-md-10 col-10 col-offset-1 col-center mb-50">
+                <p class="">SelfCoder offers total design freedom without any knowledge of HTML or CSS.
+                    Create mobile-friendly layouts and dynamic content for a polished product that
+                     you'll be proud to show off to your prospects, customers, or investors.</p>
+            </div>
             <!-- col -->
             <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
                 style="visibility: visible; animation-name: fadeInUp;">
                 <div class="team-box text-center py-3 rounded mt-4 py5">
                     <div class="single-box">
                         <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/pixel/pixel.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /col -->
+            <!-- col -->
+            <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
+                style="visibility: visible; animation-name: fadeInUp;">
+                <div class="team-box text-center py-3 rounded mt-4 py5">
+                    <div class="single-box">
+                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/blog/blog1.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /col -->
+            <!-- col -->
+            <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
+                style="visibility: visible; animation-name: fadeInUp;">
+                <div class="team-box text-center py-3 rounded mt-4 py5">
+                    <div class="single-box">
+                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/blog/blog2.png') }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- /col -->
+            <!-- col -->
+            <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
+                style="visibility: visible; animation-name: fadeInUp;">
+                <div class="team-box text-center py-3 rounded mt-4 py5">
+                    <div class="single-box">
+                        <img class="key-feature-img" src="{{ asset('assets/img/selfcoder/blog/blog3.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -159,49 +214,15 @@
                 </div>
             </div>
             <!-- /col -->
-            <div class="col-md-10 col-12 col-center mb-50 pt-4">
-                <h1 class="title">Pixel-perfect designs</h1>
+            <div class="col-md-6 col-6 col-offset-2 col-center mb-50 pt-4">
+                <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
             </div>
-            <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
-                <p class="">SelfCoder offers total design freedom without any knowledge of HTML or CSS.
-                    Create mobile-friendly layouts and dynamic content for a polished product that
-                     you'll be proud to show off to your prospects, customers, or investors.</p>
-                     <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>            </div>
         </div>
     </div>
 
     <!-- Container -->
 </section>
-
-    <section class="" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
-        <!-- Container -->
-        <div class="container-fluid">
-            <div class="row hero-1-content">
-                <div class="col-md-12">
-                    <div class="hero-image text-center">
-                        {{-- <img src="{{ asset('assets/img/lms/learner.png') }}" class="img-fluid" data-aos="fade-up"
-                            alt="Hero"> --}}
-                            <img src="{{ asset('assets/img/selfcoder/workflow.png') }}" class="img-fluid rounded py5" data-aos="fade-up" alt="Hero">
-                        </div>
-                    <div class="col-md-12 ">
-                        <h1 class="title">Robust, scalable infrastructure</h1>
-                    </div>
-                    <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
-                        <p class="">Traditional web applications require you to manage your code and set up a deployment process to a web server.
-                            SelfCoder handles deployment and hosting for you.
-                            There are no hard limits on the number of users, volume of traffic, or data storage.</p>
-                            <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>                    </div>
-                {{-- </div>
-                <div class="col-md-8 col-12 col-center mb-50">
-                    <a class="ticket-btn" href="javascript:void(0)">Browse Frontend</a>
-                    <a class="backend-btn" href="javascript:void(0)">Browse Backend</a>
-                </div> --}}
-            </div>
-        </div>
-        <!-- Container -->
-    </section>
-    {{-- section-4 --}}
-    <section class="pt-50 pb-50 section-2">
+    <section class="pt-50 section-2">
         <!-- Container -->
         <div class="container">
             <div class="row hero-1-content pt-20">
@@ -211,11 +232,11 @@
                 <div class="col-md-12 mb-50">
                     <div class="row mt-5 pt-2">
                         <!-- col -->
-                        <div class="col-md-6 col-lg-6 wow fadeInUp  delay-4s animated"
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company.png') }}" alt="">
+                                    <img class="img-box" src="{{ asset('assets/img/selfcoder/images/images.png') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Offers clean energy home financing</h5>
@@ -226,11 +247,41 @@
                         </div>
                         <!-- /col -->
                         <!-- col -->
-                        <div class="col-md-6 col-lg-6 wow fadeInUp  delay-4s animated"
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company1.png') }}" alt="">
+                                    <img class="img-box" src="{{ asset('assets/img/selfcoder/images/icon.png') }}" alt="">
+                                </div>
+                                <div class="box-tittle">
+                                    <h5 class="f-18 mt-4 mb-2">Offers clean energy home financing</h5>
+                                </div>
+                                <p class="box-dec text-center cus-decription">Raised $365M
+                                    in venture funding.</p>
+                            </div>
+                        </div>
+                        <!-- /col -->
+                        <!-- col -->
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="team-box text-center py-3 py5 rounded mt-4">
+                                <div class="box-img1">
+                                    <img class="img-box" src="{{ asset('assets/img/selfcoder/icon/iconn.png') }}" alt="">
+                                </div>
+                                <div class="box-tittle">
+                                    <h5 class="f-18 mt-4 mb-2">Offers clean energy home financing</h5>
+                                </div>
+                                <p class="box-dec text-center cus-decription">Raised $365M
+                                    in venture funding.</p>
+                            </div>
+                        </div>
+                        <!-- /col -->
+                        <!-- col -->
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
+                            style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="team-box text-center py-3 py5 rounded mt-4">
+                                <div class="box-img1">
+                                    <img class="img-box" src="{{ asset('assets/img/selfcoder/icon/i-1.jpg') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Helps repay loans and debt automatically</h5>
@@ -242,11 +293,11 @@
                         </div>
                         <!-- /col -->
                         <!-- col -->
-                        <div class="col-md-6 col-lg-6 wow fadeInUp  delay-4s animated"
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company2.svg') }}" alt="">
+                                    <img class="img-box" src="{{ asset('assets/img/selfcoder/icon/i-2.png') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Curates agile freelance IT talent</h5>
@@ -257,11 +308,11 @@
                         </div>
                         <!-- /col -->
                         <!-- col -->
-                        <div class="col-md-6 col-lg-6 wow fadeInUp  delay-4s animated"
+                        <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company3.png') }}" alt="">
+                                    <img class="img-box" src="{{ asset('assets/img/selfcoder/company3.png') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Tracks and organizes job search</h5>
@@ -273,60 +324,28 @@
                         <!-- /col -->
 
                     <div class="col-md-6 col-6 col-offset-2 col-center mb-50 pt-4">
-                        <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>                    </div>
+                        <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Container -->
-    </section>
+</section>
     {{-- section-4 end --}}
 
         {{-- work-section start --}}
-        <section class="pt-50 pb-50">
+        <section class="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 mb-50">
                         <div class="col-md-12 offset-2 col-center ">
-                            <h1 class="title">Join a thriving community of SelfCoder developers.</h1>
+                            <h1 class="title">Thriving community of SelfCoder developers.</h1>
                         </div>
-                        <div class="row mt-5 pt-2">
-                            <!-- col -->
-                            <div class="col-lg-6 wow fadeInUp  delay-4s animated"
+                        <div class="row mt-5 pt-2"><!-- col -->
+                            <div class="col-lg-3 wow fadeInUp  delay-4s animated"
                                 style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box py-3 rounded mt-4 py5">
-                                    <div class="item-box">
-                                        <div class="box-img ">
-                                            <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/forum.svg') }}" alt="">
-                                        </div>
-                                        <div class="box-tittle">
-                                            <h2 class="m-4">Forum</h2>
-                                        </div>
-                                    </div>
-                                    <p class="box-dec">Ask and answer questions about SelfCoder in our active user community.</p>
-                                </div>
-                            </div>
-                            <!-- /col -->
-                            <!-- col -->
-                            <div class="col-lg-6 wow fadeInUp  delay-4s animated"
-                                style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box  py-3 rounded mt-4 py5">
-                                    <div class="item-box">
-                                        <div class="box-img ">
-                                            <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/integrations.svg') }}" alt="">
-                                        </div>
-                                        <div class="box-tittle">
-                                            <h2 class="m-4">Integrations</h2>
-                                        </div>
-                                    </div>
-                                    <p class="box-dec ">Extend SelfCoder’s core functionality with new elements, actions, and API connections.</p>
-                                </div>
-                            </div>
-                            <!-- /col -->
-                            <!-- col -->
-                            <div class="col-lg-6 wow fadeInUp  delay-4s animated"
-                                style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box  py-3 rounded mt-4 py5">
+                                <div class="team-box  py-3 rounded mt-4 py6">
                                     <div class="item-box">
                                         <div class="box-img ">
                                             <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/marketplace.svg') }}" alt="">
@@ -340,9 +359,41 @@
                             </div>
                             <!-- /col -->
                             <!-- col -->
-                            <div class="col-lg-6 wow fadeInUp  delay-4s animated"
+                            <div class="col-lg-3 wow fadeInUp  delay-4s animated"
                                 style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box  py-3 rounded mt-4 py5">
+                                <div class="team-box py-3 rounded mt-4 py6">
+                                    <div class="item-box">
+                                        <div class="box-img ">
+                                            <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/forum.svg') }}" alt="">
+                                        </div>
+                                        <div class="box-tittle">
+                                            <h2 class="m-4">Forum</h2>
+                                        </div>
+                                    </div>
+                                    <p class="box-dec">Ask and answer questions about SelfCoder in our active user community.</p>
+                                </div>
+                            </div>
+                            <!-- /col -->
+                            <!-- col -->
+                            <div class="col-lg-3 wow fadeInUp  delay-4s animated"
+                                style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="team-box  py-3 rounded mt-4 py6">
+                                    <div class="item-box">
+                                        <div class="box-img ">
+                                            <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/integrations.svg') }}" alt="">
+                                        </div>
+                                        <div class="box-tittle">
+                                            <h2 class="m-4">Integrations</h2>
+                                        </div>
+                                    </div>
+                                    <p class="box-dec ">Extend SelfCoder’s core functionality with new elements, actions, and API connections.</p>
+                                </div>
+                            </div>
+                            <!-- /col -->
+                            <!-- col -->
+                            <div class="col-lg-3 wow fadeInUp  delay-4s animated"
+                                style="visibility: visible; animation-name: fadeInUp;">
+                                <div class="team-box  py-3 rounded mt-4 py6">
                                     <div class="item-box">
                                         <div class="box-img ">
                                             <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/agencies.svg') }}" alt="">
@@ -368,8 +419,7 @@
             <div class="row hero-1-content pt-20">
                 <div class="col-md-10 col-12 col-center mb-50">
                     <h1 class="title">Create a free account to get started.</h1>
-                    <a class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
-                    <p class="sub-text">Join 2,022,695 SelfCoders today and start building.</p>
+                    <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
                 </div>
             </div>
         </div>
@@ -378,100 +428,97 @@
     {{-- section 3 end --}}
 @endsection
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        {{-- <div class="modal-header">
+
+        </div> --}}
         <div class="modal-body">
             <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
                 <!-- Container -->
                 <div class="container">
-                    <div class="row  ">
-                        <div class="container mt-2">
-                            <div class="row justify-content-center align-items-center  p-2">
-                                <div class="m-1 col-sm-12 col-md-12 col-lg-12 shadow-sm p-3 mb-5 bg-white border rounded">
-                                    <div class="pt-5 pb-5">
-                                        <img class="rounded mx-auto d-block" src="{{ asset('assets/img/tork-logo.png') }}" alt="" width=70px height=70px>
-                                        <h5 class="modal-title text-center" id="exampleModalLabel">SelfCoder</h5>
-                                        <hr>
-                                        <form class="form-signin rounded-sm ">
-                                            <!-- Nav tabs -->
-                                            <ul class="nav nav-pills mb-4">
-                                                <li class="pill-1">
-                                                    <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
-                                                </li>
-                                                <li class="pill-2">
-                                                    <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
-                                                </li>
-                                            </ul>
-                                            <!-- Tab panes -->
-                                            <div class="tab-content">
-
-                                                <!-- Tab1 -->
-                                                <div id="login" class="container tab-pane active">
-                                                    <div class="form-group">
-                                                        <label for="inputEmail" class="">Email</label>
-                                                        <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="inputPassword" class="">Password</label>
-                                                        <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
-                                                    </div>
-                                                    <div class="one-line mb-2">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" checked="checked" value="remember-me"> Remember me
-                                                            </label>
-
-                                                        </div>
-                                                        <a class="forgot text-right" href="#">Forgot password?</a>
-                                                    </div>
-                                                    <div class="checkbox mb-3">
-                                                        {{-- <label>
-                                                            <input type="checkbox" value="login-as-instructor"> Login as instructor
-                                                        </label> --}}
-                                                    </div>
-                                                        <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Login</a>
-                                                    </div>
-
-                                                <!-- Tab2 -->
-                                                <div id="register" class="container tab-pane fade">
-                                                    <label for="inputEmail" class="">Email</label>
-                                                    <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
-                                                    <label for="inputPassword" class="">Password</label>
-                                                    <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
-                                                    <label for="inputPassword" class="">Confirm Password</label>
-                                                    <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
-
-                                                    <div class="checkbox mb-3">
-                                                        {{-- <label>
-                                                            <input type="checkbox" value="Register-as-instructor"> Register as instructor
-                                                        </label> --}}
-                                                    </div>
-                                                    <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Register</a>
-                                                 </div>
-                                            </div>
-
-                                        </form>
-                                   </div><!-- /.container -->
-                                    </div>
-                                    <hr>
-                                    <a href="" class="btn btn-primary rounded-0 btn-block">
-                                      <i class="fa fa-google"></i> Login with Google
-                                    </a>
-                                </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div>
+                                <img class="mx-auto d-block tork-logo" src="{{ asset('assets/img/tork-logo.png') }}" alt=""><br>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Container -->
-            </section>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="m-1 col-sm-12 col-md-12 col-lg-12">
+                            <div class="pt-5 pb-5">
+                                <form class="form-signin">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills mb-4">
+                                        <li class="pill-1">
+                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                        </li>
+                                        <li class="pill-2">
+                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+
+                                        <!-- Tab1 -->
+                                        <div id="login" class="container tab-pane active">
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="">Email</label>
+                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword" class="">Password</label>
+                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                            </div>
+                                            <div class="one-line mb-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" value="remember-me"> Remember me
+                                                    </label>
+
+                                                </div>
+                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                            </div>
+                                                <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Login</a>
+                                            </div>
+
+                                        <!-- Tab2 -->
+                                        <div id="register" class="container tab-pane fade">
+                                            <label for="inputEmail" class="">Email</label>
+                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
+                                            <label for="inputPassword" class="">Password</label>
+                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
+                                            <label for="inputPassword" class="">Confirm Password</label>
+                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+
+                                            <div class="checkbox mb-3">
+                                                {{-- <label>
+                                                    <input type="checkbox" value="Register-as-instructor"> Register as instructor
+                                                </label> --}}
+                                            </div>
+                                            <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Register</a>
+                                         </div>
+                                    </div>
+
+                                </form>
+                            </div><!-- /.container -->
+                                </div>
+                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Container -->
+                </section>
+            </div>
         </div>
-      </div>
     </div>
 </div>
 
@@ -484,6 +531,16 @@
 @section('style')
     @parent
     <style>
+        .input-standard-grey-cus{
+            border-radius: 50px;
+            margin-bottom: 1.2rem;
+            box-shadow: #00000012 0 3px 15px, #0000001a 0 5px 10px;
+            background-color: #0404040d;
+            padding: 14px;
+        }
+        .las{
+            margin-top: 10px;
+        }
      a.log{
         color: white !important;
     }
@@ -533,6 +590,7 @@
             font-size: 16px;
             padding: 5px 20px 5px 20px;
             text-align: center;
+
         }
 
         .section-2 {
@@ -544,11 +602,25 @@
             width: auto;
             border-radius: 50%;
         }
+        .img-box{
+            height: 60px;
+            width: auto;
+        }
 
         .team-box .cus-decription {
             text-align: center;
         }
 
+        .py6 {
+            height: 200px;
+            width: auto;
+            padding: 20px;
+            overflow: visible;
+            /* background: none rgba(241, 243, 246, 0.5); */
+            box-shadow: rgb(17 18 38 / 15%) 0px 0px 2px 0px;
+            transition: background 200ms ease 0s, box-shadow 200ms ease 0s;
+            background: #ffff;
+        }
         .py5 {
             padding: 20px;
             overflow: visible;
@@ -570,6 +642,7 @@
 
         .key-feature-img {
             width: 100%;
+            height: 200px;
         }
 
         .section-end h1 {
@@ -611,6 +684,11 @@
         .box-img1 {
             height: 60px;
             width: auto;
+        }
+        /* login logo */
+        .tork-logo{
+            width: 90px;
+            height: auto;
         }
         /* DEMO 3 ============================== */
 .hover-3::after {

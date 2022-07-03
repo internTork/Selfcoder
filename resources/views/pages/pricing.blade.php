@@ -12,7 +12,7 @@
                         Pay as you grow.</h1>
                 </div>
                 <div class="col-md-8 col-12 col-center mb-50 pt-4">
-                        <a href="" class="ticket-btn btn-primary {{ Route::is('login') ? 'active' : '' }}" data-toggle="modal" data-target="#exampleModal">Get started for free</a>
+                    <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
                 </div>
             </div>
         </div>
@@ -323,7 +323,7 @@
             <div class="row hero-1-content pt-20">
                 <div class="col-md-10 col-12 col-center mb-50">
                     <h1 class="title">Create a free account to get started.</h1>
-                    <a class="ticket-btn btn-primary" href=""  data-toggle="modal" data-target="#exampleModal">Get Started For Free</a>
+                    <a class="ticket-btn btn-primary {{ Route::is('pricing') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
                     <p class="sub-text">Join 2,023,090 SelfCoders today and start building.</p>
                 </div>
             </div>
@@ -333,100 +333,97 @@
     {{-- section 3 end --}}
 @endsection
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
+        {{-- <div class="modal-header">
+
+        </div> --}}
         <div class="modal-body">
             <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
                 <!-- Container -->
                 <div class="container">
-                    <div class="row  ">
-                        <div class="container mt-2">
-                            <div class="row justify-content-center align-items-center  p-2">
-                                <div class="m-1 col-sm-12 col-md-12 col-lg-12 shadow-sm p-3 mb-5 bg-white border rounded">
-                                    <div class="pt-5 pb-5">
-                                        <img class="rounded mx-auto d-block" src="{{ asset('assets/img/tork-logo.png') }}" alt="" width=70px height=70px>
-                                        <h5 class="modal-title text-center" id="exampleModalLabel">SelfCoder</h5>
-                                        <hr>
-                                        <form class="form-signin rounded-sm ">
-                                            <!-- Nav tabs -->
-                                            <ul class="nav nav-pills mb-4">
-                                                <li class="pill-1">
-                                                    <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
-                                                </li>
-                                                <li class="pill-2">
-                                                    <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
-                                                </li>
-                                            </ul>
-                                            <!-- Tab panes -->
-                                            <div class="tab-content">
-
-                                                <!-- Tab1 -->
-                                                <div id="login" class="container tab-pane active">
-                                                    <div class="form-group">
-                                                        <label for="inputEmail" class="">Email</label>
-                                                        <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="inputPassword" class="">Password</label>
-                                                        <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
-                                                    </div>
-                                                    <div class="one-line mb-2">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" checked="checked" value="remember-me"> Remember me
-                                                            </label>
-
-                                                        </div>
-                                                        <a class="forgot text-right" href="#">Forgot password?</a>
-                                                    </div>
-                                                    <div class="checkbox mb-3">
-                                                        {{-- <label>
-                                                            <input type="checkbox" value="login-as-instructor"> Login as instructor
-                                                        </label> --}}
-                                                    </div>
-                                                        <a class="log btn btn-lg btn-dark btn-block rounded-0" href="{{ route('home2') }}">Login</a>
-                                                    </div>
-
-                                                <!-- Tab2 -->
-                                                <div id="register" class="container tab-pane fade">
-                                                    <label for="inputEmail" class="">Email</label>
-                                                    <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
-                                                    <label for="inputPassword" class="">Password</label>
-                                                    <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
-                                                    <label for="inputPassword" class="">Confirm Password</label>
-                                                    <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
-
-                                                    <div class="checkbox mb-3">
-                                                        {{-- <label>
-                                                            <input type="checkbox" value="Register-as-instructor"> Register as instructor
-                                                        </label> --}}
-                                                    </div>
-                                                    <button class="btn btn-lg btn-dark btn-block rounded-0" type="submit">Register</button>
-                                                 </div>
-                                            </div>
-
-                                        </form>
-                                   </div><!-- /.container -->
-                                    </div>
-                                    <hr>
-                                    <a href="" class="btn btn-primary rounded-0 btn-block">
-                                      <i class="fa fa-google"></i> Login with Google
-                                    </a>
-                                </div>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div>
+                                <img class="mx-auto d-block tork-logo" src="{{ asset('assets/img/tork-logo.png') }}" alt=""><br>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Container -->
-            </section>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="m-1 col-sm-12 col-md-12 col-lg-12">
+                            <div class="pt-5 pb-5">
+                                <form class="form-signin">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills mb-4">
+                                        <li class="pill-1">
+                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                        </li>
+                                        <li class="pill-2">
+                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+
+                                        <!-- Tab1 -->
+                                        <div id="login" class="container tab-pane active">
+                                            <div class="form-group">
+                                                <label for="inputEmail" class="">Email</label>
+                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputPassword" class="">Password</label>
+                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                            </div>
+                                            <div class="one-line mb-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" value="remember-me"> Remember me
+                                                    </label>
+
+                                                </div>
+                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                            </div>
+                                                <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Login</a>
+                                            </div>
+
+                                        <!-- Tab2 -->
+                                        <div id="register" class="container tab-pane fade">
+                                            <label for="inputEmail" class="">Email</label>
+                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
+                                            <label for="inputPassword" class="">Password</label>
+                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
+                                            <label for="inputPassword" class="">Confirm Password</label>
+                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+
+                                            <div class="checkbox mb-3">
+                                                {{-- <label>
+                                                    <input type="checkbox" value="Register-as-instructor"> Register as instructor
+                                                </label> --}}
+                                            </div>
+                                            <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Register</a>
+                                         </div>
+                                    </div>
+
+                                </form>
+                            </div><!-- /.container -->
+                                </div>
+                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Container -->
+                </section>
+            </div>
         </div>
-      </div>
     </div>
 </div>
 
@@ -439,6 +436,10 @@
 @section('style')
     @parent
     <style>
+        .tork-logo{
+            width: 90px;
+            height: auto;
+        }
         .heading {
             text-align: left;
         }

@@ -85,7 +85,7 @@
                        </ul>
                        <ul class="nav navber-height navbar-nav navbar-right">
                         <li class=" active dropdown">
-                            <a class="nav-link dropdown-toggle btn-menu" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                            <a class="ticket-btn" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">
                                 <i class="las la-ticket-alt"></i>Menu
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

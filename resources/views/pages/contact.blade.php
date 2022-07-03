@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="title-heading text-center text-md-center">
                         <h2>Contact Us</h2>
-                        <p class="mt-3 mb-0">Enjoy The Most Powerful Moder Lerner LMS</p>
+                        <p class="mt-3 mb-0">Enjoy The Most Powerful Modern SelfCoder</p>
                         <nav aria-label="breadcrumb" class="d-inline-block mt-4">
                             <ul class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="index-2.html">Tork</a></li>

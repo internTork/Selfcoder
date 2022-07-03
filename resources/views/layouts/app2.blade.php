@@ -24,7 +24,7 @@
 
 
     <!-- Footer -->
-    @include('layouts.footer')
+    @include('layouts.footer1')
     <!-- /Footer -->
 
 

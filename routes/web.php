@@ -38,9 +38,10 @@ Route::get('/marketplace', function () {
 Route::get('/login', function () {
     return view('pages.login');
 })->name('login');
-// Route::get('/welcome', function () {
-//     return view('pages.login');
-// })->name('login');
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
+
 
 //Docs
 

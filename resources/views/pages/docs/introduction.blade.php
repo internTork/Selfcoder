@@ -126,15 +126,15 @@
                                 <h3>Folder Structure</h3>
                                 <div class="mt-3">
                                     <pre class="prettyprint"><span class="pun">├──</span><span class="pln"> html files</span><span class="pln">
-</span><span class="pun">├──</span><span class="pln"> css</span><span class="pun">/</span>
-    </span><span class="pun"></span><span class="pln"></span><span class="pun">├──</span><span class="pln"> All css files
-</span><span class="pun">├──</span><span class="pln"> fonts</span><span class="pun">/</span>
-</span><span class="pun">├──</span><span class="pln"> img</span><span class="pun">/</span>
-</span><span class="pun">├──</span><span class="pln"> Js</span><span class="pun">/</span>
-    </span><span class="pun">├──</span><span class="pln"> All common Javascripts files</span>
-</span><span class="pun">├──</span><span class="pln"> scss</span><span class="pun">/</span>
-    </span><span class="pun">├──</span><span class="pln"> All scss files</span>
-</span></pre>
+                                    </span><span class="pun">├──</span><span class="pln"> css</span><span class="pun">/</span>
+                                        </span><span class="pun"></span><span class="pln"></span><span class="pun">├──</span><span class="pln"> All css files
+                                    </span><span class="pun">├──</span><span class="pln"> fonts</span><span class="pun">/</span>
+                                    </span><span class="pun">├──</span><span class="pln"> img</span><span class="pun">/</span>
+                                    </span><span class="pun">├──</span><span class="pln"> Js</span><span class="pun">/</span>
+                                        </span><span class="pun">├──</span><span class="pln"> All common Javascripts files</span>
+                                    </span><span class="pun">├──</span><span class="pln"> scss</span><span class="pun">/</span>
+                                        </span><span class="pun">├──</span><span class="pln"> All scss files</span>
+                                    </span></pre>
                                 </div>
                                 <hr>
 
@@ -160,3 +160,9 @@
     </section>
     <!-- /Introduction -->
 @endsection
+<style>
+    .tork-logo{
+            width: 90px;
+            height: auto;
+        }
+</style>

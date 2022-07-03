@@ -8,8 +8,8 @@
                     <ul>
 
                     <h6 class="fw-bold">Discover</h6>
-                        <li><a href="">Showcase</a></li>
-                        <li><a href="">Pricing</a></li>
+                        <li><a href="{{ route('showcase') }}">Showcase</a></li>
+                        <li><a href="{{ route('pricing') }}">Pricing</a></li>
                         <li><a href="">How to build</a></li>
                         <li><a href="">FAQ</a></li>
                     </ul>
@@ -20,7 +20,7 @@
                     <ul>
 
                     <h6 class="fw-bold">Ecosystem</h6>
-                        <li><a href="">Marketplace</a></li>
+                        <li><a href="{{ route('marketplace') }}">Marketplace</a></li>
                         <li><a href="">Templates</a></li>
                         <li><a href="">Plugins</a></li>
                         <li><a href="">Agencies</a></li>
@@ -66,9 +66,8 @@
                         <li><a href="">Careers</a></li>
                         <li><a href="">Values</a></li>
                         <li><a href="">Press</a></li>
-                        <li><a href="">Brand guidelines</a></li>
                         <li><a href="">Support</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li><a href="{{ route("contact") }}">Contact us</a></li>
                     </ul>
                 </div>
             </div>
@@ -122,3 +121,8 @@
     </div>
 </div>
 <!-- /Search Popup -->
+<style>
+    .las{
+            margin-top: 10px;
+        }
+</style>

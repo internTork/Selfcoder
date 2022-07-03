@@ -163,13 +163,13 @@
                                             </div>
                                         </div>
                                         <div class="form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <input type="checkbox" class="form-check-input check" id="exampleCheck1">
                                             <label class="form-check-label font-size" for="exampleCheck1"> I certify that I own all the intellectual property rights                                            </label>
                                         </div>
 
                                     </div>
                                     <div class="col-md-6 pt-4">
-                                        <button class="btn btn-primary btn-block ">create</button>
+                                        <button class="ticket-btn btn-primary btn-block ">create</button>
                                     </div>
                                 </form>
 
@@ -192,6 +192,9 @@
 @section('style')
     @parent
     <style>
+        .check{
+            margin-top: 9px;
+        }
         .font-size{
             font-size: 13px;
             font-weight: bold;
