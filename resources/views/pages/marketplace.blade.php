@@ -8,8 +8,8 @@
             <div class="row hero-1-content pt-20">
                 <div class="col-md-12 col-12 col-center mb-50">
                     <p>MARKETPLACE</p>
-                    <h1 class="title">Build, extend, and create robust products on SelfCoder.</h1>
-                    <p class="">Find the perfect template, plugin, or agency to help you realize your vision.</p>
+                    <h1 class="title">On SelfCoder, develop, extend, and produce reliable products.</h1>
+                    <p class="">Find the ideal agency, plugin, or template to assist you in realizing your vision.</p>
                 </div>
                 <div class="col-md-12 mb-50">
                     <div class="row mt-5 pt-2 text-left">
@@ -23,7 +23,7 @@
                                         <h2 class="m-4">Tamplates</h2>
                                     </div>
                                 </div>
-                                <p class="box-dec">Build with ready-made apps and templates created by the SelfCoder community.</p>
+                                <p class="box-dec">Utilize templates and ready-made software developed by the SelfCoder community.</p>
                             </a>
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                                         <h2 class="m-4">Plugins</h2>
                                     </div>
                                 </div>
-                                <p class="box-dec ">Extend SelfCoder's functionality with new elements, actions, and API connections.</p>
+                                <p class="box-dec ">Add new components, actions, and API connections to expand SelfCoder's capabilities.</p>
                                 </a>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                         <h2 class="m-4">Agencies</h2>
                                     </div>
                                 </div>
-                                <p class="box-dec ">Purchase services from our vibrant ecosystem of consultancies and agencies.</p>
+                                <p class="box-dec ">Use our thriving network of consultants and agencies to purchase services.</p>
                                 </a>
                             </div>
                         </div>

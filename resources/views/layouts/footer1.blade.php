@@ -8,14 +8,20 @@
                             <a href=""><img src="{{ asset('assets/img/tork-logo.png') }}" class="img-fluid" alt="logo"></a>
                         </div>
                         <div class="footer-text">
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                            elit,Lorem ipsum dolor sit amet.</p>
+                            <p>Selfcoder is working in IT services developing software applications</p>
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            <a href="https://www.facebook.com/TorkInc/" target="_blank"><i class="ri-facebook-fill"></i></a>
+                            <a href="https://www.instagram.com/accounts/login/?next=/tork_inc/"><i class="ri-instagram-line" target="_blank"></i></a>
+                            <a href="https://twitter.com/Tork_Inc"><i class="ri-twitter-line" target="_blank"></i></a>
+                            <a href="https://www.youtube.com/channel/UCdveHCiKWUwmLjzkMQY6GlQ"><i class="ri-youtube-line" target="_blank"></i></a>
+                            {{-- <ul class="social-link">
+                                <li><a href="https://www.facebook.com/TorkInc/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                                <li><a href="https://www.instagram.com/accounts/login/?next=/tork_inc/"><i class="ri-instagram-line" target="_blank"></i></a></li>
+                                <li><a href="https://twitter.com/Tork_Inc"><i class="ri-twitter-line" target="_blank"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCdveHCiKWUwmLjzkMQY6GlQ"><i class="ri-youtube-line" target="_blank"></i></a></li>
+                            </ul> --}}
                         </div>
                     </div>
                 </div>
@@ -25,16 +31,18 @@
                             <h3>Useful Links</h3>
                         </div>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="{{ route('home2') }}">Home</a></li>
                             <li><a href="#">about</a></li>
                             <li><a href="#">services</a></li>
+                            <li><a href="{{ route('user_marketplace') }}">Marketplace</a></li>
+                            <li><a href="{{ route('user_showcase') }}">Showcase</a></li>
+                            <li><a href="{{ route('user_pricing') }}">Pricing</a></li>
                             <li><a href="#">portfolio</a></li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">About us</a></li>
+                            <li><a href="{{ route('user_introduction') }}">About us</a></li>
                             <li><a href="#">Our Services</a></li>
                             <li><a href="#">Expert Team</a></li>
                             <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Latest News</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,12 +52,12 @@
                             <h3>Subscribe</h3>
                         </div>
                         <div class="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            <p>Don’t miss to subscribe to our new feeds.</p>
                         </div>
                         <div class="subscribe-form">
                             <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="fab fa-telegram-plane"></i></button>
+                                <input class="" type="text" placeholder="Email Address">
+                                <button>Submit</button>
                             </form>
                         </div>
                     </div>
@@ -62,13 +70,13 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                     <div class="copyright-text">
-                        <p>Copyright &copy; 2018, All Right Reserved</p>
+                        <p>Copyright &copy; 2020 <a class="text-primary font-weight-bold" href="https://thetork.com/" target="_blank">Tork</a> all right reserved designed and developed</p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="{{ route('home2') }}">Home</a></li>
                             <li><a href="#">Terms</a></li>
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Policy</a></li>
@@ -80,7 +88,50 @@
         </div>
     </div>
 </footer>
+<!-- Back to top -->
+<div id="thetop"></div>
+<div id="backtotop">
+    <a href="#" id="scroll">
+        <i class="las la-chevron-up"></i>
+    </a>
+</div>
+<!-- /Back to top -->
 <style>
+.social-link {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding-left: 0;
+}
+.social-link li {
+    display: flex;
+    margin: 0 10px;
+}
+
+.footer-social-icon a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #c7cce6;
+    border-radius: 50%;
+    /* display: block; */
+    color: #ffffff;
+    font-size: 18px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    padding: 8px 7px 0px 6px;
+    /* right: 8px; */
+    margin-right: 7px;
+}
+.footer-social-icon a:hover, .footer-social-icon a:focus {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4d68fd;
+    border-color: #4d68fd;
+}
+.las{
+        margin-top: 10px;
+    }
 ul {
     margin: 0px;
     padding: 0px;
@@ -144,7 +195,7 @@ ul {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
-.footer-social-icon a {
+/* .footer-social-icon a {
   color: #fff;
   font-size: 16px;
   margin-right: 15px;
@@ -155,14 +206,14 @@ ul {
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
-}
+} */
 .facebook-bg{
   background: #3B5998;
 }
 .twitter-bg{
   background: #55ACEE;
 }
-.google-bg{
+.youtube-bg{
   background: #DD4B39;
 }
 .footer-widget-heading h3 {
@@ -179,7 +230,7 @@ ul {
   bottom: -15px;
   height: 2px;
   width: 50px;
-  background: #ff5e14;
+  background: #0330c5d2;
 }
 .footer-widget ul li {
   display: inline-block;
@@ -188,7 +239,7 @@ ul {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  color: #ff5e14;
+  color: 4d68fd ;
 }
 .footer-widget ul li a {
   color: #878787;
@@ -208,10 +259,11 @@ ul {
 .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #ff5e14;
+    background: #0524d4;
     padding: 13px 20px;
-    border: 1px solid #ff5e14;
+    border: 1px solid #1235cfc0;
     top: 0;
+    color: white;
 }
 .subscribe-form button i {
   color: #fff;
@@ -235,7 +287,7 @@ ul {
   margin-left: 20px;
 }
 .footer-menu li:hover a{
-  color: #ff5e14;
+  color: 4d68fd;
 }
 .footer-menu li a {
   font-size: 14px;

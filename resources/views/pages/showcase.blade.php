@@ -8,8 +8,8 @@
             <div class="row hero-1-content pt-20">
                 <div class="col-md-12 col-12 col-center mb-50">
                     <p>SHOWCASE</p>
-                    <h1 class="title">Discover what you can build with Self-Coder.</h1>
-                    <p class="">Self-Coder builders have launched and grown their businesses by building data-driven, fully functional apps with our simple visual editor..</p>
+                    <h1 class="title">Find out what you can create using Self-Coder.</h1>
+                    <p class="">By using our straightforward visual editor to create data-driven, fully functional apps, Self-Coder builders have started and expanded their businesses.</p>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
                                         </div>
                                         <div class="col-md-7 col-7 mb-50">
                                             <div class="show-case-img">
-                                                <img src="{{ asset('assets/img/selfcoder/feature/nucode.jpg') }}"
+                                                <img src="{{ asset('assets/img/selfcoder/feature/funtionality.jpg') }}"
                                                     class="img-fluid show-right" data-aos="fade-up" alt="Hero">
                                             </div>
                                         </div>
@@ -285,7 +285,6 @@
                 <div class="col-md-10 col-12 col-center mb-50">
                     <h1 class="title">Create a free account to get started.</h1>
                     <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
-                    <p class="sub-text">Join 2,023,090 SelfCoders today and start building.</p>
                 </div>
             </div>
         </div>
