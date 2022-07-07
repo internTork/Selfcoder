@@ -6,10 +6,9 @@
         <!-- Container -->
         <div class="container">
             <div class="row hero-1-content pt-20">
-                <div class="col-md-12">
-                    <h2 class="heading text-center text-primary">Pricing</h2>
-                    <h1 class="title">Free to learn and build.
-                        Pay as you grow.</h1>
+                <div class="col-md-8 offset-2">
+                    <p>PRICING</p>
+                    <h1 class="title">Free to build and learn. <br> Pay as you advance.</h1>
                 </div>
                 <div class="col-md-8 col-12 col-center mb-50 pt-4">
                     <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>

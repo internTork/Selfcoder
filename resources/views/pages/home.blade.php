@@ -85,7 +85,7 @@
                         </div>
                         <!-- /col -->
                         <div class="col-md-8 offset-2 col-center pt-4">
-                            <h1 class="title">Design, develop and run powerful products with SelfCoder.</h1>
+                            <h1 class="title">With SelfCoder, you can create, operate, and run strong products.</h1>
                             <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
                                 <a href=""><p class="text-primary">Edit this page in SelfCoder to see how it works  </p></a>
                             </div>
@@ -132,9 +132,11 @@
                 </div>
                 <div class="col-md-5 col-5 mb-50">
                     <h1 class="title-showcase">Robust, scalable infrastructure </h1>
-                    <p class="showcase-content">Traditional web applications require you to manage your code and set up a deployment process to a web server.
-                        SelfCoder handles deployment and hosting for you.
-                        There are no hard limits on the number of users, volume of traffic, or data storage.</p>
+                    <p class="showcase-content">The setup of a deployment process to a web server and management
+                         of your code are requirements for traditional web applications.
+                          SelfCoder takes care of hosting and deployment for you.
+                           The quantity of users, the amount of traffic,
+                         or the amount of data storage are all unrestricted.</p>
                     <a class="ticket-btn btn-primary {{ Route::is('home') ? 'active' : '' }}" href="" data-toggle="modal" data-target="#loginmodal">Get started for free</a>
                 </div>
             </div>
@@ -151,9 +153,9 @@
                 <h1 class="title">Pixel-perfect designs</h1>
             </div>
             <div class="col-md-10 col-10 col-offset-1 col-center mb-50">
-                <p class="">SelfCoder offers total design freedom without any knowledge of HTML or CSS.
-                    Create mobile-friendly layouts and dynamic content for a polished product that
-                     you'll be proud to show off to your prospects, customers, or investors.</p>
+                <p class="">SelfCoder allows complete design freedom without requiring any HTML or CSS expertise.
+                     Make dynamic content and mobile-friendly layouts for a finished product
+                    that you can proudly display to potential clients, consumers, or investors.</p>
             </div>
             <!-- col -->
             <div class="col-md-4 col-lg-4 wow fadeInUp  delay-4s animated"
@@ -227,7 +229,7 @@
         <div class="container">
             <div class="row hero-1-content pt-20">
                 <div class="col-md-10 offset-2">
-                    <h1 class="title">Successful companies use SelfCoder.</h1>
+                    <h1 class="title">SelfCoder is used by profitable companies.</h1>
                 </div>
                 <div class="col-md-12 mb-50">
                     <div class="row mt-5 pt-2">
@@ -435,7 +437,7 @@
 
         </div> --}}
         <div class="modal-body">
-            <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+            <section class="" style="">
                 <!-- Container -->
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
@@ -452,22 +454,22 @@
                     </div>
                     <div class="row justify-content-center align-items-center">
                         <div class="m-1 col-sm-12 col-md-12 col-lg-12">
-                            <div class="pt-5 pb-5">
+                            <div class="pt-5 mb-20">
                                 <form class="form-signin">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills mb-4">
                                         <li class="pill-1">
-                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                            <a class="nav-link active  btn-left-border" data-toggle="tab" href="#login">Login</a>
                                         </li>
                                         <li class="pill-2">
-                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                            <a class="nav-link btn-right-border " data-toggle="tab" href="#register">Register</a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
-                                    <div class="tab-content">
+                                    <div class="tab-content pr-3">
 
                                         <!-- Tab1 -->
-                                        <div id="login" class="container tab-pane active">
+                                        <div id="login" class="  tab-pane active">
                                             <div class="form-group">
                                                 <label for="inputEmail" class="">Email</label>
                                                 <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
@@ -481,15 +483,19 @@
                                                     <label>
                                                         <input type="checkbox" checked="checked" value="remember-me"> Remember me
                                                     </label>
-
                                                 </div>
-                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                                <div class="form-group">
+                                                    <a class="forgot text-right" href="#">Forgot password?</a>
+                                                </div>
                                             </div>
                                                 <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Login</a>
+                                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                                </a>
                                             </div>
 
                                         <!-- Tab2 -->
-                                        <div id="register" class="container tab-pane fade">
+                                        <div id="register" class=" tab-pane fade">
                                             <label for="inputEmail" class="">Email</label>
                                             <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
                                             <label for="inputPassword" class="">Password</label>
@@ -503,15 +509,14 @@
                                                 </label> --}}
                                             </div>
                                             <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Register</a>
-                                         </div>
+                                            <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                                <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                            </a>
+                                        </div>
                                     </div>
-
                                 </form>
                             </div><!-- /.container -->
                                 </div>
-                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
-                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -530,7 +535,7 @@
 
 @section('style')
     @parent
-    <style>
+    <style scoped>
         .input-standard-grey-cus{
             border-radius: 50px;
             margin-bottom: 1.2rem;
@@ -545,7 +550,27 @@
         color: white !important;
     }
     .rounded-0{
-        border-radius: 10px !important;
+        border: 1px solid black;
+        /* border-radius: 10px !important; */
+        /* border-top-left-radius: 10px; */
+    }
+
+    .btn-left-border{
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+        background: #d8f1e9;
+    }
+    .btn-right-border{
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+        background: #d8f1e9;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
     }
         .hero-1-content .short-dec {
             max-width: 600px;
@@ -625,9 +650,11 @@
             padding: 20px;
             overflow: visible;
             /* background: none rgba(241, 243, 246, 0.5); */
-            box-shadow: rgb(17 18 38 / 15%) 0px 0px 2px 0px;
+            /* box-shadow: rgb(17 18 38 / 15%) 0px 0px 2px 0px; */
             transition: background 200ms ease 0s, box-shadow 200ms ease 0s;
             background: #ffff;
+            box-shadow: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
+            height: 200px;
         }
 
         .py5:hover {
@@ -750,6 +777,10 @@
 
 .hover-3:hover .hover-overlay {
   background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-pills .nav-link {
+    border-radius: 0rem;
 }
     </style>
 @endsection

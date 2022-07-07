@@ -293,5 +293,11 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+.footer-section {
+    padding: 10px;
+    background: #151414;
+    position: relative;
+    margin-top: 200px;
+}
 
 </style>

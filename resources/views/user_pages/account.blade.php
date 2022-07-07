@@ -129,6 +129,10 @@
 @section('style')
     @parent
     <style>
+    .nav-link {
+        display: block;
+        padding: .5rem 1rem;
+        }
         .heading {
             text-align: left;
         }

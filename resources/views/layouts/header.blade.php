@@ -143,15 +143,15 @@
                     </div>
                     <div class="row justify-content-center align-items-center">
                         <div class="m-1 col-sm-12 col-md-12 col-lg-12">
-                            <div class="pt-5 pb-5">
+                            <div class="pt-5 mb-20">
                                 <form class="form-signin">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills mb-4">
                                         <li class="pill-1">
-                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                            <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
                                         </li>
                                         <li class="pill-2">
-                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                            <a class="nav-link " data-toggle="tab" href="#register">Register</a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
@@ -210,7 +210,6 @@
                 </section>
             </div>
         </div>
-    </div>
 </div>
 
 <script>
@@ -221,9 +220,6 @@
 <style>
     a.log{
         color: white !important;
-    }
-    .rounded-0{
-        border-radius: 10px !important;
     }
     .img-google{
         height: 20px;

@@ -117,6 +117,11 @@
        </div>
    </header>
 <style>
+    .dropdown-item:focus, .dropdown-item:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #4d68fd !important;
+    }
     .navbar-nav li:hover > ul.dropdown-menu {
 	display: block;
 }

@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-md-6 col-6 col-offset-2 col-center mb-50">
                     <p class="in-line">
-                        Learn how to use SelfCoder with our resources, or get started by creating a new app.</p>
+                        Using our tools, you can either start by making a new app or learn how to use SelfCoder.</p>
                         <a class="ticket-btn btn-primary {{ Route::is('home2') ? 'active' : '' }}" href=""  data-toggle="modal" data-target="#exampleModal">Create a new app</a>
                 </div>
             </div>
@@ -20,7 +20,7 @@
     </section>
     <!-- /Hero -->
     {{-- section-4 --}}
-    <section class="pt-50 pb-50 section-2">
+    <section class="pb-50 section-2">
         <!-- Container -->
         <div class="container">
             <div class="row hero-1-content pt-20">
@@ -46,13 +46,13 @@
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company1.png') }}" alt="">
+                                    <img class="img-home" src="{{ asset('assets/img/selfcoder/icon/demo.jpg') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Demo</h5>
                                 </div>
-                                <p class="box-dec text-center cus-decription">Raised $1.5M
-                                    in venture funding
+                                <p class="box-dec text-center cus-decription">
+                                    Our guided courses will teach you how to create with Selfcoder.
                                 </p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company1.png') }}" alt="">
+                                    <img class="img-home" src="{{ asset('assets/img/selfcoder/icon/documentation.jpg') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Documentation</h5>
@@ -92,13 +92,12 @@
                             style="visibility: visible; animation-name: fadeInUp;">
                             <div class="team-box text-center py-3 py5 rounded mt-4">
                                 <div class="box-img1">
-                                    <img src="{{ asset('assets/img/selfcoder/company3.png') }}" alt="">
+                                    <img class="img-home" src="{{ asset('assets/img/selfcoder/icon/learn.jpg') }}" alt="">
                                 </div>
                                 <div class="box-tittle">
                                     <h5 class="f-18 mt-4 mb-2">Learn From Zero</h5>
                                 </div>
-                                <p class="box-dec text-center cus-decription">Raised $5M
-                                    in venture funding</p>
+                                <p class="box-dec text-center cus-decription">Find out how to develop with SelfCoder.</p>
                             </div>
                         </div>
                         <!-- /col -->
@@ -201,6 +200,10 @@
 @section('style')
     @parent
     <style>
+        .img-home{
+            height: 70px;
+            width: auto;
+        }
         .hero-1-content .short-dec {
             max-width: 600px;
         }
@@ -267,6 +270,7 @@
         }
 
         .py5 {
+            height: 200px;
             padding: 20px;
             overflow: visible;
             /* background: none rgba(241, 243, 246, 0.5); */
