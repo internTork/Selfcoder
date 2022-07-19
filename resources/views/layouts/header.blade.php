@@ -126,7 +126,7 @@
 
         </div> --}}
         <div class="modal-body">
-            <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+            <section class="" style="">
                 <!-- Container -->
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
@@ -148,45 +148,49 @@
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills mb-4">
                                         <li class="pill-1">
-                                            <a class="nav-link active" data-toggle="tab" href="#login">Login</a>
+                                            <a class="nav-link active  btn-left-border" data-toggle="tab" href="#login">Login</a>
                                         </li>
                                         <li class="pill-2">
-                                            <a class="nav-link " data-toggle="tab" href="#register">Register</a>
+                                            <a class="nav-link btn-right-border " data-toggle="tab" href="#register">Register</a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
-                                    <div class="tab-content">
+                                    <div class="tab-content pr-3">
 
                                         <!-- Tab1 -->
-                                        <div id="login" class="container tab-pane active">
+                                        <div id="login" class="  tab-pane active">
                                             <div class="form-group">
-                                                <label for="inputEmail" class="">Email</label>
-                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                                <label for="inputEmail" class="">Email <span class="text-danger">*</span></label>
+                                                <input type="email" id="inputEmail" class="form-control input-1 mb-4" placeholder="example@gmail.com" required autofocus>
                                             </div>
                                             <div class="form-group">
                                                 <label for="inputPassword" class="">Password</label>
-                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                                <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="********" required>
                                             </div>
                                             <div class="one-line mb-2">
                                                 <div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" checked="checked" value="remember-me"> Remember me
                                                     </label>
-
                                                 </div>
-                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                                <div class="">
+                                                    <a class="forgot" href="#">Forgot password?</a>
+                                                </div>
                                             </div>
                                                 <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Login</a>
+                                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                                </a>
                                             </div>
 
                                         <!-- Tab2 -->
-                                        <div id="register" class="container tab-pane fade">
+                                        <div id="register" class=" tab-pane fade">
                                             <label for="inputEmail" class="">Email</label>
-                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
+                                            <input type="email" id="inputEmail" class="form-control input-1 mb-4" placeholder="Email address" required autofocus>
                                             <label for="inputPassword" class="">Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
+                                            <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="Password" required>
                                             <label for="inputPassword" class="">Confirm Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+                                            <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="Repeat Password" required>
 
                                             <div class="checkbox mb-3">
                                                 {{-- <label>
@@ -194,15 +198,14 @@
                                                 </label> --}}
                                             </div>
                                             <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Register</a>
-                                         </div>
+                                            <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                                <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                            </a>
+                                        </div>
                                     </div>
-
                                 </form>
                             </div><!-- /.container -->
                                 </div>
-                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
-                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -210,6 +213,7 @@
                 </section>
             </div>
         </div>
+    </div>
 </div>
 
 <script>
@@ -218,6 +222,34 @@
 })
 </script>
 <style>
+    .one-line{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-left-border{
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+        background: #d8f1e9;
+    }
+    .btn-right-border{
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+        background: #d8f1e9;
+    }
+    .input-1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    font-size: 14px;
+    padding: 10px 50px 10px 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
     a.log{
         color: white !important;
     }

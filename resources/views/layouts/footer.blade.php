@@ -35,7 +35,6 @@
 
                     <h6 class="fw-bold">Product</h6>
                         <li><a href="">Responsive design</a></li>
-                        <li><a href="">Feature index</a></li>
                         <li><a href="">Integrations</a></li>
                         <li><a href="">Security</a></li>
                         <li><a href="">Releases</a></li>

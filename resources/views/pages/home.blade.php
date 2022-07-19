@@ -347,7 +347,7 @@
                         <div class="row mt-5 pt-2"><!-- col -->
                             <div class="col-lg-3 wow fadeInUp  delay-4s animated"
                                 style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box  py-3 rounded mt-4 py6">
+                                <div class="team-box shadow-1 py-3 rounded mt-4 py6">
                                     <div class="item-box">
                                         <div class="box-img ">
                                             <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/marketplace.svg') }}" alt="">
@@ -363,7 +363,7 @@
                             <!-- col -->
                             <div class="col-lg-3 wow fadeInUp  delay-4s animated"
                                 style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box py-3 rounded mt-4 py6">
+                                <div class="team-box shadow-1 py-3 rounded mt-4 py6">
                                     <div class="item-box">
                                         <div class="box-img ">
                                             <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/forum.svg') }}" alt="">
@@ -379,7 +379,7 @@
                             <!-- col -->
                             <div class="col-lg-3 wow fadeInUp  delay-4s animated"
                                 style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box  py-3 rounded mt-4 py6">
+                                <div class="team-box shadow-1  py-3 rounded mt-4 py6">
                                     <div class="item-box">
                                         <div class="box-img ">
                                             <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/integrations.svg') }}" alt="">
@@ -395,7 +395,7 @@
                             <!-- col -->
                             <div class="col-lg-3 wow fadeInUp  delay-4s animated"
                                 style="visibility: visible; animation-name: fadeInUp;">
-                                <div class="team-box  py-3 rounded mt-4 py6">
+                                <div class="team-box shadow-1  py-3 rounded mt-4 py6">
                                     <div class="item-box">
                                         <div class="box-img ">
                                             <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/agencies.svg') }}" alt="">
@@ -471,12 +471,12 @@
                                         <!-- Tab1 -->
                                         <div id="login" class="  tab-pane active">
                                             <div class="form-group">
-                                                <label for="inputEmail" class="">Email</label>
-                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                                <label for="inputEmail" class="">Email <span class="text-danger">*</span></label>
+                                                <input type="email" id="inputEmail" class="form-control input-1 mb-4" placeholder="example@gmail.com" required autofocus>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputPassword" class="">Password</label>
-                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                                <label for="inputPassword" class="">Password <span class="text-danger">*</span></label>
+                                                <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="********" required>
                                             </div>
                                             <div class="one-line mb-2">
                                                 <div class="checkbox">
@@ -484,8 +484,8 @@
                                                         <input type="checkbox" checked="checked" value="remember-me"> Remember me
                                                     </label>
                                                 </div>
-                                                <div class="form-group">
-                                                    <a class="forgot text-right" href="#">Forgot password?</a>
+                                                <div class="">
+                                                    <a class="forgot" href="#">Forgot password?</a>
                                                 </div>
                                             </div>
                                                 <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Login</a>
@@ -496,12 +496,12 @@
 
                                         <!-- Tab2 -->
                                         <div id="register" class=" tab-pane fade">
-                                            <label for="inputEmail" class="">Email</label>
-                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
-                                            <label for="inputPassword" class="">Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
-                                            <label for="inputPassword" class="">Confirm Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+                                            <label for="inputEmail" class="">Email <span class="text-danger">*</span></label>
+                                            <input type="email" id="inputEmail" class="form-control input-1 mb-4" placeholder="Email address" required autofocus>
+                                            <label for="inputPassword" class="">Password <span class="text-danger">*</span></label>
+                                            <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="Password" required>
+                                            <label for="inputPassword" class="">Confirm Password <span class="text-danger">*</span></label>
+                                            <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="Repeat Password" required>
 
                                             <div class="checkbox mb-3">
                                                 {{-- <label>
@@ -516,13 +516,13 @@
                                     </div>
                                 </form>
                             </div><!-- /.container -->
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <!-- Container -->
-                </section>
-            </div>
+                </div>
+                </div>
+                <!-- Container -->
+            </section>
+        </div>
         </div>
     </div>
 </div>
@@ -536,44 +536,60 @@
 @section('style')
     @parent
     <style scoped>
-        .input-standard-grey-cus{
-            border-radius: 50px;
-            margin-bottom: 1.2rem;
-            box-shadow: #00000012 0 3px 15px, #0000001a 0 5px 10px;
-            background-color: #0404040d;
-            padding: 14px;
-        }
-        .las{
-            margin-top: 10px;
-        }
-     a.log{
+    .input-standard-grey-cus{
+        border-radius: 50px;
+        margin-bottom: 1.2rem;
+        box-shadow: #00000012 0 3px 15px, #0000001a 0 5px 10px;
+        background-color: #0404040d;
+        padding: 14px;
+    }
+    .las{
+        margin-top: 10px;
+    }
+    a.log{
         color: white !important;
     }
+
     .rounded-0{
         border: 1px solid black;
         /* border-radius: 10px !important; */
         /* border-top-left-radius: 10px; */
     }
-
+    .one-line{
+        display: flex;
+        justify-content: space-between;
+    }
     .btn-left-border{
         /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
         border-top-left-radius: 10px !important;
         border-bottom-left-radius: 10px !important;
         background: #d8f1e9;
     }
-    .btn-right-border{
+        .btn-right-border{
         /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
         border-top-right-radius: 10px !important;
         border-bottom-right-radius: 10px !important;
         background: #d8f1e9;
-    }
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #007bff;
-    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
-    }
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #007bff;
+        /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+        }
         .hero-1-content .short-dec {
             max-width: 600px;
+        }
+        .input-1 {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        font-size: 14px;
+        padding: 10px 50px 10px 30px;
+        border-radius: 30px;
+        -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+        border: none;
         }
 
         .hero-1-content .sub-text {
@@ -669,7 +685,7 @@
 
         .key-feature-img {
             width: 100%;
-            height: 200px;
+            height: 150px;
         }
 
         .section-end h1 {
@@ -717,32 +733,38 @@
             width: 90px;
             height: auto;
         }
+        .show-case-img{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
+        .shadow-1{
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        }
         /* DEMO 3 ============================== */
-.hover-3::after {
-  content: '';
-  width: calc(100% - 3rem);
-  height: calc(100% - 3rem);
-  border: 1px solid #fff;
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  z-index: 90;
-  transition: all 0.3s;
-  transform: scale(1.1);
-  opacity: 0;
-  display: block;
-  opacity: 0;
-}
+        .hover-3::after {
+        content: '';
+        width: calc(100% - 3rem);
+        height: calc(100% - 3rem);
+        border: 1px solid #fff;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        z-index: 90;
+        transition: all 0.3s;
+        transform: scale(1.1);
+        opacity: 0;
+        display: block;
+        opacity: 0;
+        }
 
-.hover-3-content {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
-  text-align: center;
-  z-index: 99;
-}
+        .hover-3-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        text-align: center;
+        z-index: 99;
+        }
 
 .hover-3-description {
   opacity: 0;

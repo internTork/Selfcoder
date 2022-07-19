@@ -121,7 +121,7 @@
                                         </div>
                                         <div class="col-md-7 col-7 mb-50">
                                             <div class="show-case-img">
-                                                <img src="{{ asset('assets/img/selfcoder/feature/nucode.jpg') }}"
+                                                <img src="{{ asset('assets/img/selfcoder/feature/funtionality.jpg') }}"
                                                     class="img-fluid show-right" data-aos="fade-up" alt="Hero">
                                             </div>
                                         </div>
@@ -365,6 +365,7 @@
         }
 
         img.show-right {
+            margin-top: 40px;
             border-radius: 10px;
             box-shadow: rgb(17 18 38 / 15%) 0px 0px 10px 0px;
             background: white;

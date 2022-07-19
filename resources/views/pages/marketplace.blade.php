@@ -16,7 +16,7 @@
                         <!-- col -->
                         <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="team-box py-3 rounded mt-4 py5">
+                            <div class="team-box py-3 rounded mt-4 py6">
                                 <a href="">
                                 <div class="item-box">
                                     <div class="box-tittle">
@@ -31,7 +31,7 @@
                         <!-- col -->
                         <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="team-box  py-3 rounded mt-4 py5">
+                            <div class="team-box  py-3 rounded mt-4 py6">
                                 <a href="">
                                 <div class="item-box">
                                     <div class="box-tittle">
@@ -46,7 +46,7 @@
                         <!-- col -->
                         <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                             style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="team-box  py-3 rounded mt-4 py5">
+                            <div class="team-box  py-3 rounded mt-4 py6">
                                 <a href="">
                                 <div class="item-box">
                                     <div class="box-tittle">
@@ -397,7 +397,7 @@
                                 <!-- col -->
                                 <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                                     style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="team-box py-3 rounded mt-4 py5">
+                                    <div class="team-box py-3 rounded mt-4 py-6">
                                         <div class="item-box">
                                             <div class="box-img ">
                                                 <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/logo1.jpg') }}" alt="">
@@ -414,7 +414,7 @@
                                 <!-- col -->
                                 <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                                     style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="team-box py-3 rounded mt-4 py5">
+                                    <div class="team-box py-3 rounded mt-4 py-6">
                                         <div class="item-box">
                                             <div class="box-img ">
                                                 <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/logo3.jpg') }}" alt="">
@@ -431,7 +431,7 @@
                                 <!-- col -->
                                 <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                                     style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="team-box py-3 rounded mt-4 py5">
+                                    <div class="team-box py-3 rounded mt-4 py-6">
                                         <div class="item-box">
                                             <div class="box-img ">
                                                 <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/logo4.jpg') }}" alt="">
@@ -448,7 +448,7 @@
                                 <!-- col -->
                                 <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                                     style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="team-box py-3 rounded mt-4 py5">
+                                    <div class="team-box py-3 rounded mt-4 py-6">
                                         <div class="item-box">
                                             <div class="box-img ">
                                                 <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/logo3.jpg') }}" alt="">
@@ -465,7 +465,7 @@
                                 <!-- col -->
                                 <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                                     style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="team-box  py-3 rounded mt-4 py5">
+                                    <div class="team-box  py-3 rounded mt-4 py-6">
                                         <div class="item-box">
                                             <div class="box-img ">
                                                 <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/logo4.jpg') }}" alt="">
@@ -481,7 +481,7 @@
                                 <!-- col -->
                                 <div class="col-lg-4 wow fadeInUp  delay-4s animated"
                                     style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="team-box  py-3 rounded mt-4 py5">
+                                    <div class="team-box  py-3 rounded mt-4 py-6">
                                         <div class="item-box">
                                             <div class="box-img ">
                                                 <img class="img-control" src="{{ asset('assets/img/selfcoder/icon/logo3.jpg') }}" alt="">
@@ -523,7 +523,7 @@
 
         </div> --}}
         <div class="modal-body">
-            <section class=" section-2" style="background: url('{{ asset('assets/img/bg/line-bg.png') }}') top center;">
+            <section class="" style="">
                 <!-- Container -->
                 <div class="container">
                     <div class="row justify-content-center align-items-center">
@@ -540,50 +540,54 @@
                     </div>
                     <div class="row justify-content-center align-items-center">
                         <div class="m-1 col-sm-12 col-md-12 col-lg-12">
-                            <div class="pt-5 pb-5">
+                            <div class="pt-5 mb-20">
                                 <form class="form-signin">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-pills mb-4">
                                         <li class="pill-1">
-                                            <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Login</a>
+                                            <a class="nav-link active  btn-left-border" data-toggle="tab" href="#login">Login</a>
                                         </li>
                                         <li class="pill-2">
-                                            <a class="nav-link  rounded-0 " data-toggle="tab" href="#register">Register</a>
+                                            <a class="nav-link btn-right-border " data-toggle="tab" href="#register">Register</a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
-                                    <div class="tab-content">
+                                    <div class="tab-content pr-3">
 
                                         <!-- Tab1 -->
-                                        <div id="login" class="container tab-pane active">
+                                        <div id="login" class="  tab-pane active">
                                             <div class="form-group">
-                                                <label for="inputEmail" class="">Email</label>
-                                                <input type="email" id="inputEmail" class="form-control mb-4" placeholder="example@gmail.com" required autofocus>
+                                                <label for="inputEmail" class="">Email<span class="text-danger">*</span></label>
+                                                <input type="email" id="inputEmail" class="form-control input-1 mb-4" placeholder="example@gmail.com" required autofocus>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputPassword" class="">Password</label>
-                                                <input type="password" id="inputPassword" class="form-control mb-4" placeholder="********" required>
+                                                <label for="inputPassword" class="">Password <span class="text-danger">*</span></label>
+                                                <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="********" required>
                                             </div>
                                             <div class="one-line mb-2">
                                                 <div class="checkbox">
                                                     <label>
                                                         <input type="checkbox" checked="checked" value="remember-me"> Remember me
                                                     </label>
-
                                                 </div>
-                                                <a class="forgot text-right" href="#">Forgot password?</a>
+                                                <div class="">
+                                                    <a class="forgot" href="#">Forgot password?</a>
+                                                </div>
                                             </div>
                                                 <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Login</a>
+                                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                                </a>
                                             </div>
 
                                         <!-- Tab2 -->
-                                        <div id="register" class="container tab-pane fade">
-                                            <label for="inputEmail" class="">Email</label>
-                                            <input type="email" id="inputEmail" class="form-control mb-4" placeholder="Email address" required autofocus>
-                                            <label for="inputPassword" class="">Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Password" required>
-                                            <label for="inputPassword" class="">Confirm Password</label>
-                                            <input type="password" id="inputPassword" class="form-control mb-4" placeholder="Repeat Password" required>
+                                        <div id="register" class=" tab-pane fade">
+                                            <label for="inputEmail" class="">Email<span class="text-danger">*</span></label>
+                                            <input type="email" id="inputEmail" class="form-control input-1 mb-4" placeholder="Email address" required autofocus>
+                                            <label for="inputPassword" class="">Password<span class="text-danger">*</span></label>
+                                            <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="Password" required>
+                                            <label for="inputPassword" class="">Confirm Password<span class="text-danger">*</span></label>
+                                            <input type="password" id="inputPassword" class="form-control input-1 mb-4" placeholder="Repeat Password" required>
 
                                             <div class="checkbox mb-3">
                                                 {{-- <label>
@@ -591,15 +595,14 @@
                                                 </label> --}}
                                             </div>
                                             <a class="ticket-btn btn-block text-center" href="{{ route('home2') }}">Register</a>
-                                         </div>
+                                            <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
+                                                <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
+                                            </a>
+                                        </div>
                                     </div>
-
                                 </form>
                             </div><!-- /.container -->
                                 </div>
-                                <a href="{{ route('home2') }}" class="ticket-btn btn-block text-center">
-                                    <img alt="" class="img-google" src="{{ asset('assets/img/selfcoder/plugin/plugin8.png') }}"> Login with Google
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -609,7 +612,6 @@
         </div>
     </div>
 </div>
-
 <script>
     $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
@@ -619,6 +621,34 @@
 @section('style')
     @parent
     <style>
+            .one-line{
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-left-border{
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        border-top-left-radius: 10px !important;
+        border-bottom-left-radius: 10px !important;
+        background: #d8f1e9;
+    }
+    .btn-right-border{
+        /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+        border-top-right-radius: 10px !important;
+        border-bottom-right-radius: 10px !important;
+        background: #d8f1e9;
+    }
+    .input-1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    font-size: 14px;
+    padding: 10px 50px 10px 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+}
     a.log{
         color: white !important;
     }
@@ -801,6 +831,24 @@
         }
         .box-dec{
             font-size: 18px;
+        }
+        .py6 {
+        padding: 20px;
+        height: 220px;
+        overflow: visible;
+        /* background: none rgba(241, 243, 246, 0.5); */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        transition: background 200ms ease 0s, box-shadow 200ms ease 0s;
+        background: #ffff;
+        }
+        .py-6 {
+        height: 200px;
+        padding: 20px;
+        overflow: visible;
+        /* background: none rgba(241, 243, 246, 0.5); */
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        transition: background 200ms ease 0s, box-shadow 200ms ease 0s;
+        background: #ffff;
         }
 
     </style>
